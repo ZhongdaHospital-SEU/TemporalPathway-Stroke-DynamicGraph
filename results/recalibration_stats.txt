@@ -1,0 +1,44 @@
+Time-aware isotonic recalibration of temporal-split predictions
+Analysis date: 2026-08-16
+Cohort: MIMIC-IV stroke ICU subset (n=2875); temporal split train 2008-2019 (n=2052) -> test 2020-2022 (n=823)
+Model: XGBoost static / static+TS, pipeline identical to work/temporal_validation_a.py (A.1)
+Recalibration: sklearn.isotonic.IsotonicRegression fitted on training-period 5-fold OOF risks, applied to test predictions
+Calibration metrics on the test period:
+  slope/intercept = patient-level logistic calibration (same convention as temporal_validation_results.csv)
+  R2 = r^2 of logit-logit regression over 10 equal-width probability bins (paper Figure 3B convention)
+  drift P = decile bin-based Hosmer-Lemeshow chi2 (observed vs expected events), df = 8
+  AUC = binary ROC AUC for the threshold risk
+
+=== static ===
+y>=1 (event rate 0.818):
+  before: slope=0.9157 intercept=-0.5692 R2=0.9304 drift chi2=51.95 P=1.72e-08 AUC=0.8915 mean_risk=0.8719
+  after : slope=0.8974 intercept=-0.4335 R2=0.8853 drift chi2=35.87 P=1.86e-05 AUC=0.8899 mean_risk=0.8648
+         distinct recalibrated risk values=30; tie-robust AUC after=0.8915 (== AUC before)
+y>=2 (event rate 0.676):
+  before: slope=0.9769 intercept=-0.5074 R2=0.9755 drift chi2=43.57 P=6.86e-07 AUC=0.8658 mean_risk=0.7437
+  after : slope=1.0020 intercept=-0.4073 R2=0.9765 drift chi2=26.43 P=0.0009 AUC=0.8647 mean_risk=0.7299
+         distinct recalibrated risk values=36; tie-robust AUC after=0.8658 (== AUC before)
+y>=3 (event rate 0.375):
+  before: slope=0.9613 intercept=-0.3429 R2=0.9757 drift chi2=17.38 P=0.0264 AUC=0.8894 mean_risk=0.4177
+  after : slope=0.8699 intercept=-0.4668 R2=0.9356 drift chi2=34.46 P=3.36e-05 AUC=0.8883 mean_risk=0.4312
+         distinct recalibrated risk values=43; tie-robust AUC after=0.8894 (== AUC before)
+
+=== static+ts ===
+y>=1 (event rate 0.818):
+  before: slope=0.9196 intercept=-0.5258 R2=0.9223 drift chi2=55.90 P=2.95e-09 AUC=0.8955 mean_risk=0.8682
+  after : slope=0.9237 intercept=-0.4222 R2=0.0542 drift chi2=30.30 P=0.0002 AUC=0.8960 mean_risk=0.8605
+         distinct recalibrated risk values=25; tie-robust AUC after=0.8955 (== AUC before)
+y>=2 (event rate 0.676):
+  before: slope=0.9641 intercept=-0.5374 R2=0.9569 drift chi2=44.47 P=4.63e-07 AUC=0.8673 mean_risk=0.7481
+  after : slope=0.9665 intercept=-0.3919 R2=0.9863 drift chi2=27.40 P=0.0006 AUC=0.8661 mean_risk=0.7305
+         distinct recalibrated risk values=35; tie-robust AUC after=0.8673 (== AUC before)
+y>=3 (event rate 0.375):
+  before: slope=0.9624 intercept=-0.3636 R2=0.9592 drift chi2=20.70 P=0.0080 AUC=0.8914 mean_risk=0.4199
+  after : slope=0.9291 intercept=-0.4924 R2=0.9873 drift chi2=38.97 P=4.97e-06 AUC=0.8913 mean_risk=0.4371
+         distinct recalibrated risk values=38; tie-robust AUC after=0.8914 (== AUC before)
+
+Discrimination check: isotonic regression is monotone (non-decreasing), so the rank order of distinct scores is preserved. Standard AUC can shift by <0.002 only because isotonic plateaus create tied scores; the tie-robust (lexicographic) AUC after recalibration matches the pre-recalibration AUC exactly, max |delta| = 1.110e-16.
+
+Consistency with temporal_validation_results.csv (A.1, P(y>=3), logistic slope/intercept):
+  static: CSV slope=0.961328 int=-0.342875 vs recomputed slope=0.961328 int=-0.342875  match=True
+  static+ts: CSV slope=0.962438 int=-0.363619 vs recomputed slope=0.962438 int=-0.363619  match=True

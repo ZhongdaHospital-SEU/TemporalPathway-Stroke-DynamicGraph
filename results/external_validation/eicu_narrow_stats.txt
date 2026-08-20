@@ -1,0 +1,15 @@
+                                                   label    n  macro_auc      acc    kappa
+                         eicu_narrow_transfer_xgb_static 1385   0.737378 0.345126 0.192816
+      eicu_narrow_transfer_xgb_static_mortality_auc_full 7692   0.876758 0.061910      NaN
+   eicu_narrow_transfer_xgb_static_mortality_auc_ordinal 1385   0.873392      NaN      NaN
+         eicu_narrow_transfer_xgb_static_calib_slope_int 1385   1.330489 0.468112      NaN
+           eicu_narrow_transfer_xgb_static_hosp_mort_auc   57   0.898438 0.549808 1.000000
+                      eicu_narrow_transfer_xgb_static_ts 1385   0.801119 0.366787 0.222975
+   eicu_narrow_transfer_xgb_static_ts_mortality_auc_full 7692   0.965980 0.040472      NaN
+eicu_narrow_transfer_xgb_static_ts_mortality_auc_ordinal 1385   0.944978      NaN      NaN
+      eicu_narrow_transfer_xgb_static_ts_calib_slope_int 1385   1.309645 0.699069      NaN
+        eicu_narrow_transfer_xgb_static_ts_hosp_mort_auc   57   0.984848 0.846154 1.000000
+                               eicu_narrow_cv_xgb_static 1385   0.785788 0.658484 0.493618
+                 eicu_narrow_cv_xgb_static_mortality_auc 1385   0.893249      NaN      NaN
+                            eicu_narrow_cv_xgb_static_ts 1385   0.883200 0.781949 0.677753
+              eicu_narrow_cv_xgb_static_ts_mortality_auc 1385   0.977872      NaN      NaN

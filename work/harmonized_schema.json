@@ -1,0 +1,185 @@
+{
+ "channels": [
+  "hr",
+  "rr",
+  "spo2",
+  "sbp",
+  "dbp",
+  "mbp",
+  "temp",
+  "gcs"
+ ],
+ "channel_map_mimic14": {
+  "hr": 3,
+  "sbp": 4,
+  "dbp": 5,
+  "mbp": 6,
+  "rr": 7,
+  "spo2": 8,
+  "temp": 9
+ },
+ "gcs_mimic14_indices": {
+  "gcs_eye": 0,
+  "gcs_motor": 1,
+  "gcs_verbal": 2
+ },
+ "labs": [
+  {
+   "name": "glucose",
+   "mimic_itemid": 50931,
+   "eicu_names": [
+    "bedside glucose",
+    "glucose"
+   ]
+  },
+  {
+   "name": "creatinine",
+   "mimic_itemid": 50912,
+   "eicu_names": [
+    "creatinine"
+   ]
+  },
+  {
+   "name": "potassium",
+   "mimic_itemid": 50971,
+   "eicu_names": [
+    "potassium"
+   ]
+  },
+  {
+   "name": "sodium",
+   "mimic_itemid": 50983,
+   "eicu_names": [
+    "sodium"
+   ]
+  },
+  {
+   "name": "chloride",
+   "mimic_itemid": 50902,
+   "eicu_names": [
+    "chloride"
+   ]
+  },
+  {
+   "name": "bicarbonate",
+   "mimic_itemid": 50882,
+   "eicu_names": [
+    "bicarbonate"
+   ]
+  },
+  {
+   "name": "bun",
+   "mimic_itemid": 51006,
+   "eicu_names": [
+    "BUN"
+   ]
+  },
+  {
+   "name": "wbc",
+   "mimic_itemid": 51301,
+   "eicu_names": [
+    "WBC x 1000"
+   ]
+  },
+  {
+   "name": "hematocrit",
+   "mimic_itemid": 51221,
+   "eicu_names": [
+    "Hct"
+   ]
+  },
+  {
+   "name": "hemoglobin",
+   "mimic_itemid": 51222,
+   "eicu_names": [
+    "Hgb"
+   ]
+  },
+  {
+   "name": "platelets",
+   "mimic_itemid": 51265,
+   "eicu_names": [
+    "platelets"
+   ]
+  },
+  {
+   "name": "lactate",
+   "mimic_itemid": 50813,
+   "eicu_names": [
+    "lactate"
+   ]
+  },
+  {
+   "name": "inr",
+   "mimic_itemid": 51237,
+   "eicu_names": [
+    "PT - INR"
+   ]
+  },
+  {
+   "name": "bilirubin_total",
+   "mimic_itemid": 50885,
+   "eicu_names": [
+    "total bilirubin"
+   ]
+  },
+  {
+   "name": "alt",
+   "mimic_itemid": 50861,
+   "eicu_names": [
+    "ALT (SGPT)"
+   ]
+  },
+  {
+   "name": "ast",
+   "mimic_itemid": 50878,
+   "eicu_names": [
+    "AST (SGOT)"
+   ]
+  },
+  {
+   "name": "calcium",
+   "mimic_itemid": 50893,
+   "eicu_names": [
+    "calcium"
+   ]
+  },
+  {
+   "name": "magnesium",
+   "mimic_itemid": 50960,
+   "eicu_names": [
+    "magnesium"
+   ]
+  },
+  {
+   "name": "anion_gap",
+   "mimic_itemid": 50868,
+   "eicu_names": [
+    "anion gap"
+   ]
+  }
+ ],
+ "lab_stats": [
+  "n",
+  "first",
+  "last",
+  "min",
+  "max",
+  "mean"
+ ],
+ "channel_stats": [
+  "first",
+  "last",
+  "min",
+  "max",
+  "mean",
+  "std",
+  "slope"
+ ],
+ "demo_features": [
+  "age",
+  "gender_male",
+  "race_white"
+ ],
+ "max_steps": 64
+}

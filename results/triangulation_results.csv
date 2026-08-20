@@ -1,0 +1,65 @@
+model,metric,value,detail
+all,n_patients,2875.0,ICU subset
+all,los_winsor_cap_99pct_days,75.99915277777758,99th percentile of hospital LOS
+all,n_true_outcome,468.0,y=0 (HOME)
+all,n_true_outcome,365.0,y=1 (HOME CARE)
+all,n_true_outcome,833.0,y=2 (REHAB)
+all,n_true_outcome,394.0,y=3 (SNF)
+all,n_true_outcome,329.0,y=4 (HOSPICE)
+all,n_true_outcome,486.0,y=5 (DIED)
+stacked_ensemble,auc_mortality_died_vs_rest,0.9723647651185905,
+stacked_ensemble,auc_discharge_home_vs_rest,0.904637116103672,
+stacked_ensemble,auc_hospital_expire_flag,0.9721627353206301,
+stacked_ensemble,spearman_rho_los_winsorized,0.41657368916084003,
+stacked_ensemble,spearman_p_los_winsorized,4.428939863927432e-121,
+stacked_ensemble,spearman_rho_los_raw,0.41656861932624456,
+stacked_ensemble,spearman_p_los_raw,4.4616292236048155e-121,
+stacked_ensemble,mean_expected_overall,2.420501866605291,
+stacked_ensemble,pairwise_monotonic_across_outcome,1.0,
+stacked_ensemble,n_increasing_adjacent_pairs,5.0,
+stacked_ensemble,los_quintile_trend_monotonic,1.0,
+stacked_ensemble,n_increasing_los_quintiles,4.0,
+stacked_ensemble,mean_expected_by_true_outcome,1.1168618035583697,"y=0 (HOME, n=468)"
+stacked_ensemble,mean_expected_by_true_outcome,1.7721515889605932,"y=1 (HOME CARE, n=365)"
+stacked_ensemble,mean_expected_by_true_outcome,2.0436436879516715,"y=2 (REHAB, n=833)"
+stacked_ensemble,mean_expected_by_true_outcome,2.3619310792656445,"y=3 (SNF, n=394)"
+stacked_ensemble,mean_expected_by_true_outcome,3.1096174724263133,"y=4 (HOSPICE, n=329)"
+stacked_ensemble,mean_expected_by_true_outcome,4.389703758707026,"y=5 (DIED, n=486)"
+stacked_ensemble,delta_mean_expected_adjacent_pair,0.6552897854022235,y=0->1 (HOME->HOME CARE)
+stacked_ensemble,delta_mean_expected_adjacent_pair,0.2714920989910783,y=1->2 (HOME CARE->REHAB)
+stacked_ensemble,delta_mean_expected_adjacent_pair,0.318287391313973,y=2->3 (REHAB->SNF)
+stacked_ensemble,delta_mean_expected_adjacent_pair,0.7476863931606688,y=3->4 (SNF->HOSPICE)
+stacked_ensemble,delta_mean_expected_adjacent_pair,1.2800862862807127,y=4->5 (HOSPICE->DIED)
+stacked_ensemble,mean_expected_los_quintile,2.0126242029251578,"Q1 [0.1-3.7 d], n=575"
+stacked_ensemble,mean_expected_los_quintile,2.082914142232668,"Q2 [3.7-6.8 d], n=575"
+stacked_ensemble,mean_expected_los_quintile,2.372609439792109,"Q3 [6.8-11.2 d], n=575"
+stacked_ensemble,mean_expected_los_quintile,2.6894568019869682,"Q4 [11.2-20.8 d], n=575"
+stacked_ensemble,mean_expected_los_quintile,2.944904746089551,"Q5 [20.8-76.0 d], n=575"
+xgb_static_ts,auc_mortality_died_vs_rest,0.9709246942863984,
+xgb_static_ts,auc_discharge_home_vs_rest,0.8996489938533978,
+xgb_static_ts,auc_hospital_expire_flag,0.9708861550966813,
+xgb_static_ts,spearman_rho_los_winsorized,0.42596075597104877,
+xgb_static_ts,spearman_p_los_winsorized,4.343105848714337e-127,
+xgb_static_ts,spearman_rho_los_raw,0.42595757901193254,
+xgb_static_ts,spearman_p_los_raw,4.363815748915111e-127,
+xgb_static_ts,mean_expected_overall,2.413800930016568,
+xgb_static_ts,pairwise_monotonic_across_outcome,1.0,
+xgb_static_ts,n_increasing_adjacent_pairs,5.0,
+xgb_static_ts,los_quintile_trend_monotonic,1.0,
+xgb_static_ts,n_increasing_los_quintiles,4.0,
+xgb_static_ts,mean_expected_by_true_outcome,1.0181986882421488,"y=0 (HOME, n=468)"
+xgb_static_ts,mean_expected_by_true_outcome,1.68883693018858,"y=1 (HOME CARE, n=365)"
+xgb_static_ts,mean_expected_by_true_outcome,2.0207991316940555,"y=2 (REHAB, n=833)"
+xgb_static_ts,mean_expected_by_true_outcome,2.387479815836127,"y=3 (SNF, n=394)"
+xgb_static_ts,mean_expected_by_true_outcome,3.174712540819607,"y=4 (HOSPICE, n=329)"
+xgb_static_ts,mean_expected_by_true_outcome,4.482020695702145,"y=5 (DIED, n=486)"
+xgb_static_ts,delta_mean_expected_adjacent_pair,0.6706382419464312,y=0->1 (HOME->HOME CARE)
+xgb_static_ts,delta_mean_expected_adjacent_pair,0.3319622015054755,y=1->2 (HOME CARE->REHAB)
+xgb_static_ts,delta_mean_expected_adjacent_pair,0.36668068414207156,y=2->3 (REHAB->SNF)
+xgb_static_ts,delta_mean_expected_adjacent_pair,0.7872327249834798,y=3->4 (SNF->HOSPICE)
+xgb_static_ts,delta_mean_expected_adjacent_pair,1.3073081548825383,y=4->5 (HOSPICE->DIED)
+xgb_static_ts,mean_expected_los_quintile,1.9363111954302852,"Q1 [0.1-3.7 d], n=575"
+xgb_static_ts,mean_expected_los_quintile,2.027454442661964,"Q2 [3.7-6.8 d], n=575"
+xgb_static_ts,mean_expected_los_quintile,2.3522525732270845,"Q3 [6.8-11.2 d], n=575"
+xgb_static_ts,mean_expected_los_quintile,2.7113233758206734,"Q4 [11.2-20.8 d], n=575"
+xgb_static_ts,mean_expected_los_quintile,3.0416630629428316,"Q5 [20.8-76.0 d], n=575"

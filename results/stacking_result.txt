@@ -1,0 +1,7 @@
+XGB static+TS                acc=0.5297 kappa=0.4024 macroAUC=0.8260
+DG-GRU+TPR                   acc=0.4699 kappa=0.3643 macroAUC=0.8141
+stack_xgb_ts+dggru_tpr       acc=0.5360 kappa=0.4009 macroAUC=0.8295
+stack_xgb_ts+xgb_s+dggru_tpr acc=0.5391 kappa=0.4073 macroAUC=0.8304
+DG-GRU+TPR vs XGB static+TS: AUC diff 95%CI [-0.0188, -0.0050]
+stack_xgb_ts+dggru_tpr vs XGB static+TS: AUC diff 95%CI [-0.0009, +0.0077]
+stack_xgb_ts+xgb_s+dggru_tpr vs XGB static+TS: AUC diff 95%CI [+0.0005, +0.0084]

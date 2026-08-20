@@ -1,0 +1,9 @@
+metric,value
+poor_orig_auc,0.890742807074685
+poor_orig_sd,0.014052178544894581
+poor_comb_auc,0.8925833307186262
+poor_comb_sd,0.006813924950444694
+n,2875.0
+n_poor_orig,1209.0
+n_poor_comb,1302.0
+n_new,93.0

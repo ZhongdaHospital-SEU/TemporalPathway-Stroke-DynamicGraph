@@ -1,0 +1,8 @@
+n_patients = 2875
+pooled_spearman_s_tpr_vs_gcs = -0.6914858785045433
+pooled_spearman_s_notpr_vs_gcs = -0.3995755060859427
+mean_per_patient_pearson_s_tpr_vs_gcs = nan
+mean_per_patient_pearson_s_notpr_vs_gcs = nan
+frac_positive_s_tpr_gcs_corr = 0.2914285714285714
+frac_positive_s_notpr_gcs_corr = 0.38785714285714284
+gcs_mean_by_outcome = [14.57, 14.3, 13.7, 12.8, 11.46, 7.72]

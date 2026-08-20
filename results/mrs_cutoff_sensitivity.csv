@@ -1,0 +1,10 @@
+metric,value,sd
+transfer_2-6_vs_0-1,0.61,
+internal_2-6_vs_0-1,0.595,0.054
+transfer_3-6_vs_0-2,0.635,
+internal_3-6_vs_0-2,0.739,0.042
+transfer_4-6_vs_0-3,0.602,
+internal_4-6_vs_0-3,0.667,0.023
+spearman_transfer_prob_mrs,0.217,
+kendall_transfer_prob_mrs,0.157,
+ordinal_ovr_transfer_prob,0.528,

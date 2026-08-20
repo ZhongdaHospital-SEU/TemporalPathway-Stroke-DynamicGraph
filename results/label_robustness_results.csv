@@ -1,0 +1,5 @@
+﻿scheme,scheme_label,n_classes,class_counts,n_icu,static_macro_auc,static_acc,static_kappa,ts_macro_auc,ts_acc,ts_kappa
+control,对照：原 6 类（无合并）,6,468/365/833/394/329/486,2875,0.82,0.51,0.38,0.83,0.53,0.40
+A,方案A：HOSPICE(4)+DIED(5) 合并,5,468/365/833/394/815,2875,0.82,0.56,0.41,0.82,0.57,0.43
+B,方案B：HOME CARE(1)+REHAB(2) 合并,5,468/1198/394/329/486,2875,0.84,0.60,0.43,0.85,0.62,0.45
+C,方案C：HOME(0)+HOME CARE(1) 合并,5,833/833/394/329/486,2875,0.83,0.56,0.42,0.84,0.58,0.45

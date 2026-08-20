@@ -1,0 +1,1 @@
+v2_dggru_tpr_bi_tsstatic | acc: 0.4703+/-0.0117 | kappa: 0.3582 | auc: 0.7965+/-0.0067

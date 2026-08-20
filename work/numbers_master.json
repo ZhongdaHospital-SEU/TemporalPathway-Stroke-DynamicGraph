@@ -1,0 +1,559 @@
+{
+ "models": {
+  "XGB static": {
+   "acc": 0.5117,
+   "kappa": 0.3809,
+   "macroAUC": 0.8172,
+   "somersD": 0.6368,
+   "brier": 0.1024
+  },
+  "XGB static+TS": {
+   "acc": 0.5297,
+   "kappa": 0.4024,
+   "macroAUC": 0.826,
+   "somersD": 0.6443,
+   "brier": 0.0994
+  },
+  "dggru": {
+   "acc": 0.4755,
+   "kappa": 0.3708,
+   "macroAUC": 0.8132,
+   "somersD": 0.6287,
+   "brier": 0.1069
+  },
+  "dggru_tpr_amp": {
+   "acc": 0.4717,
+   "kappa": 0.3648,
+   "macroAUC": 0.8107,
+   "somersD": 0.6279,
+   "brier": 0.1078
+  },
+  "dggru_tpr_anti": {
+   "acc": 0.4713,
+   "kappa": 0.3658,
+   "macroAUC": 0.814,
+   "somersD": 0.6305,
+   "brier": 0.1066
+  },
+  "dggru_tpr": {
+   "acc": 0.4699,
+   "kappa": 0.3643,
+   "macroAUC": 0.8141,
+   "somersD": 0.6305,
+   "brier": 0.1066
+  },
+  "dggru_tpr_perm": {
+   "acc": 0.4779,
+   "kappa": 0.373,
+   "macroAUC": 0.8147,
+   "somersD": 0.6297,
+   "brier": 0.1064
+  },
+  "gru_long": {
+   "acc": 0.4626,
+   "kappa": 0.3535,
+   "macroAUC": 0.8027,
+   "somersD": 0.6178,
+   "brier": 0.1114
+  },
+  "gru": {
+   "acc": 0.4723,
+   "kappa": 0.3667,
+   "macroAUC": 0.8131,
+   "somersD": 0.6287,
+   "brier": 0.1072
+  },
+  "gru_seqonly": {
+   "acc": 0.4174,
+   "kappa": 0.3013,
+   "macroAUC": 0.7753,
+   "somersD": 0.5735,
+   "brier": 0.1124
+  },
+  "gru_tpr": {
+   "acc": 0.4727,
+   "kappa": 0.367,
+   "macroAUC": 0.8148,
+   "somersD": 0.6316,
+   "brier": 0.1065
+  },
+  "gru_tsstatic": {
+   "acc": 0.4755,
+   "kappa": 0.3693,
+   "macroAUC": 0.8118,
+   "somersD": 0.6298,
+   "brier": 0.1076
+  },
+  "v2_bi_tsstatic": {
+   "acc": 0.472,
+   "kappa": 0.36,
+   "macroAUC": 0.7953,
+   "somersD": 0.6098,
+   "brier": 0.1209
+  },
+  "v2_dggru_tpr_bi_tsstatic": {
+   "acc": 0.4703,
+   "kappa": 0.3581,
+   "macroAUC": 0.7958,
+   "somersD": 0.6102,
+   "brier": 0.1208
+  },
+  "Stack (proposed)": {
+   "acc": 0.5391,
+   "kappa": 0.4073,
+   "macroAUC": 0.8304,
+   "somersD": 0.6464,
+   "brier": 0.0982
+  }
+ },
+ "nri_idi": {
+  "icu_timeseries": {
+   "rows": [
+    {
+     "cutoff": "y>=1",
+     "NRI": 0.0996,
+     "IDI": 0.0016
+    },
+    {
+     "cutoff": "y>=2",
+     "NRI": 0.0952,
+     "IDI": 0.0033
+    },
+    {
+     "cutoff": "y>=3",
+     "NRI": 0.1308,
+     "IDI": 0.0071
+    },
+    {
+     "cutoff": "y>=4",
+     "NRI": 0.1768,
+     "IDI": 0.0161
+    },
+    {
+     "cutoff": "y>=5",
+     "NRI": 0.4603,
+     "IDI": 0.0605
+    }
+   ],
+   "mean_NRI": 0.1925
+  },
+  "pathway_prior": {
+   "rows": [
+    {
+     "cutoff": "y>=1",
+     "NRI": -0.2548,
+     "IDI": -0.002
+    },
+    {
+     "cutoff": "y>=2",
+     "NRI": -0.195,
+     "IDI": -0.0002
+    },
+    {
+     "cutoff": "y>=3",
+     "NRI": -0.3449,
+     "IDI": -0.004
+    },
+    {
+     "cutoff": "y>=4",
+     "NRI": -0.3627,
+     "IDI": -0.0064
+    },
+    {
+     "cutoff": "y>=5",
+     "NRI": -0.2322,
+     "IDI": -0.0119
+    }
+   ],
+   "mean_NRI": -0.2779
+  }
+ },
+ "dca": [
+  {
+   "cutoff": "y>=2",
+   "pt": 0.1,
+   "NB_xgb_ts": 0.6778,
+   "NB_stack": 0.678,
+   "d": 0.0003
+  },
+  {
+   "cutoff": "y>=2",
+   "pt": 0.2,
+   "NB_xgb_ts": 0.6437,
+   "NB_stack": 0.6437,
+   "d": -0.0
+  },
+  {
+   "cutoff": "y>=2",
+   "pt": 0.3,
+   "NB_xgb_ts": 0.6081,
+   "NB_stack": 0.6079,
+   "d": -0.0003
+  },
+  {
+   "cutoff": "y>=3",
+   "pt": 0.1,
+   "NB_xgb_ts": 0.3716,
+   "NB_stack": 0.3652,
+   "d": -0.0064
+  },
+  {
+   "cutoff": "y>=3",
+   "pt": 0.2,
+   "NB_xgb_ts": 0.3297,
+   "NB_stack": 0.3277,
+   "d": -0.0019
+  },
+  {
+   "cutoff": "y>=3",
+   "pt": 0.3,
+   "NB_xgb_ts": 0.2846,
+   "NB_stack": 0.2915,
+   "d": 0.0069
+  },
+  {
+   "cutoff": "y>=5",
+   "pt": 0.1,
+   "NB_xgb_ts": 0.1426,
+   "NB_stack": 0.1471,
+   "d": 0.0044
+  },
+  {
+   "cutoff": "y>=5",
+   "pt": 0.2,
+   "NB_xgb_ts": 0.1363,
+   "NB_stack": 0.1364,
+   "d": 0.0002
+  },
+  {
+   "cutoff": "y>=5",
+   "pt": 0.3,
+   "NB_xgb_ts": 0.1297,
+   "NB_stack": 0.1292,
+   "d": -0.0005
+  }
+ ],
+ "stacking_result": "XGB static+TS                acc=0.5297 kappa=0.4024 macroAUC=0.8260\nDG-GRU+TPR                   acc=0.4699 kappa=0.3643 macroAUC=0.8141\nstack_xgb_ts+dggru_tpr       acc=0.5360 kappa=0.4009 macroAUC=0.8295\nstack_xgb_ts+xgb_s+dggru_tpr acc=0.5391 kappa=0.4073 macroAUC=0.8304\nDG-GRU+TPR vs XGB static+TS: AUC diff 95%CI [-0.0188, -0.0050]\nstack_xgb_ts+dggru_tpr vs XGB static+TS: AUC diff 95%CI [-0.0009, +0.0077]\nstack_xgb_ts+xgb_s+dggru_tpr vs XGB static+TS: AUC diff 95%CI [+0.0005, +0.0084]",
+ "delong_result": "=== DeLong paired test: stack2 vs XGB static+TS (per class) ===\nclass 0: dAUC=+0.0049 z=1.98 p=0.0480\nclass 1: dAUC=-0.0019 z=-0.31 p=0.7547\nclass 2: dAUC=+0.0040 z=1.20 p=0.2306\nclass 3: dAUC=+0.0022 z=0.40 p=0.6873\nclass 4: dAUC=+0.0108 z=1.98 p=0.0472\nclass 5: dAUC=+0.0014 z=0.85 p=0.3943\nmean dAUC=+0.0036 mean z=1.02 min p=0.0472",
+ "ts_increment": "XGB static-only | acc: 0.4835+/-0.0114 | kappa: 0.3585 | auc: 0.8100+/-0.0094\nXGB static+TS | acc: 0.4928+/-0.0092 | kappa: 0.3700 | auc: 0.8134+/-0.0118",
+ "cv_baselines": "XGB static-only (full cohort) | acc: 0.4901 | kappa: 0.3663 | auc: 0.8142\nXGB static-only (ICU subset) | acc: 0.5117 | kappa: 0.3809 | auc: 0.8175\nXGB static+TS (ICU subset) | acc: 0.5297 | kappa: 0.4024 | auc: 0.8262",
+ "feasibility_baseline": "LogReg(OVR) | acc: 0.4619 +/- 0.0111\nLogReg(OVR) | kappa: 0.3333 +/- 0.0138\nLogReg(OVR) | auc: 0.7850 +/- 0.0062\nRandomForest | acc: 0.4716 +/- 0.0137\nRandomForest | kappa: 0.3338 +/- 0.0172\nRandomForest | auc: 0.7983 +/- 0.0117\nXGBoost | acc: 0.4835 +/- 0.0114\nXGBoost | kappa: 0.3585 +/- 0.0139\nXGBoost | auc: 0.8100 +/- 0.0094\nMajority-class baseline accuracy: 0.2476",
+ "delong": {
+  "per_class": [
+   {
+    "class": 1,
+    "dAUC": -0.0019,
+    "z": -0.31,
+    "p": 0.7547
+   }
+  ]
+ },
+ "tables_Table1": [
+  {
+   "Outcome": "HOME",
+   "n": "1088",
+   "Age (mean)": "58.85",
+   "Male (%)": "56.7%",
+   "ICU-seq (%)": "43.0%",
+   "LOS (h, median)": "49.13",
+   "Obs (median)": "61",
+   "First GCS (median)": "15"
+  },
+  {
+   "Outcome": "HOME CARE",
+   "n": "832",
+   "Age (mean)": "68.61",
+   "Male (%)": "49.0%",
+   "ICU-seq (%)": "43.9%",
+   "LOS (h, median)": "68.28",
+   "Obs (median)": "78",
+   "First GCS (median)": "15"
+  },
+  {
+   "Outcome": "REHAB",
+   "n": "1203",
+   "Age (mean)": "67.58",
+   "Male (%)": "50.5%",
+   "ICU-seq (%)": "69.2%",
+   "LOS (h, median)": "116.00",
+   "Obs (median)": "122",
+   "First GCS (median)": "14"
+  },
+  {
+   "Outcome": "SNF",
+   "n": "761",
+   "Age (mean)": "74.00",
+   "Male (%)": "43.0%",
+   "ICU-seq (%)": "51.8%",
+   "LOS (h, median)": "94.64",
+   "Obs (median)": "113",
+   "First GCS (median)": "13"
+  },
+  {
+   "Outcome": "HOSPICE",
+   "n": "424",
+   "Age (mean)": "71.74",
+   "Male (%)": "46.5%",
+   "ICU-seq (%)": "77.6%",
+   "LOS (h, median)": "192.73",
+   "Obs (median)": "201",
+   "First GCS (median)": "11"
+  },
+  {
+   "Outcome": "DIED",
+   "n": "550",
+   "Age (mean)": "70.90",
+   "Male (%)": "51.8%",
+   "ICU-seq (%)": "88.4%",
+   "LOS (h, median)": "140.85",
+   "Obs (median)": "159",
+   "First GCS (median)": "8"
+  }
+ ],
+ "tables_Table2": [
+  {
+   "﻿Model": "XGB static-only (full cohort)",
+   "acc": "0.49",
+   "kappa": "0.37",
+   "macro-AUC": "0.814"
+  },
+  {
+   "﻿Model": "XGB static-only (ICU subset)",
+   "acc": "0.51",
+   "kappa": "0.38",
+   "macro-AUC": "0.818"
+  },
+  {
+   "﻿Model": "XGB static+TS (ICU subset)",
+   "acc": "0.53",
+   "kappa": "0.40",
+   "macro-AUC": "0.826"
+  },
+  {
+   "﻿Model": "GRU seq-only",
+   "acc": "0.42",
+   "kappa": "0.30",
+   "macro-AUC": "0.777"
+  },
+  {
+   "﻿Model": "GRU+static",
+   "acc": "0.47",
+   "kappa": "0.37",
+   "macro-AUC": "0.814"
+  },
+  {
+   "﻿Model": "GRU+TPR",
+   "acc": "0.47",
+   "kappa": "0.37",
+   "macro-AUC": "0.815"
+  },
+  {
+   "﻿Model": "GRU+static+TS",
+   "acc": "0.48",
+   "kappa": "0.37",
+   "macro-AUC": "0.812"
+  },
+  {
+   "﻿Model": "DG-GRU",
+   "acc": "0.48",
+   "kappa": "0.37",
+   "macro-AUC": "0.814"
+  },
+  {
+   "﻿Model": "DG-GRU+TPR",
+   "acc": "0.47",
+   "kappa": "0.36",
+   "macro-AUC": "0.815"
+  },
+  {
+   "﻿Model": "DG-GRU+TPR+static+TS",
+   "acc": "0.47",
+   "kappa": "0.36",
+   "macro-AUC": "0.811"
+  },
+  {
+   "﻿Model": "GRU long (60ep)",
+   "acc": "0.46",
+   "kappa": "0.35",
+   "macro-AUC": "0.804"
+  },
+  {
+   "﻿Model": "GRU-D",
+   "acc": "0.52",
+   "kappa": "0.39",
+   "macro-AUC": "0.815"
+  },
+  {
+   "﻿Model": "Transformer",
+   "acc": "0.47",
+   "kappa": "0.35",
+   "macro-AUC": "0.784"
+  },
+  {
+   "﻿Model": "STGCN",
+   "acc": "0.50",
+   "kappa": "0.37",
+   "macro-AUC": "0.801"
+  },
+  {
+   "﻿Model": "Stack (proposed)",
+   "acc": "0.54",
+   "kappa": "0.41",
+   "macro-AUC": "0.830"
+  }
+ ],
+ "tables_Table3": [
+  {
+   "Model": "GRU",
+   "AUC": "0.814",
+   "dAUC(GRU+TPR)": "0.001",
+   "dAUC(DG-GRU+TPR)": "nan"
+  },
+  {
+   "Model": "GRU+TPR",
+   "AUC": "0.815",
+   "dAUC(GRU+TPR)": "-",
+   "dAUC(DG-GRU+TPR)": "nan"
+  },
+  {
+   "Model": "DG-GRU",
+   "AUC": "0.814",
+   "dAUC(GRU+TPR)": "nan",
+   "dAUC(DG-GRU+TPR)": "0.001"
+  },
+  {
+   "Model": "DG-GRU+TPR",
+   "AUC": "0.815",
+   "dAUC(GRU+TPR)": "nan",
+   "dAUC(DG-GRU+TPR)": "-"
+  }
+ ],
+ "tables_Table4": [
+  {
+   "Increment": "ICU timeseries (XGB static+TS vs XGB static)",
+   "Cutoff": "y>=1",
+   "NRI": "0.100",
+   "IDI": "0.002"
+  },
+  {
+   "Increment": "ICU timeseries (XGB static+TS vs XGB static)",
+   "Cutoff": "y>=2",
+   "NRI": "0.095",
+   "IDI": "0.003"
+  },
+  {
+   "Increment": "ICU timeseries (XGB static+TS vs XGB static)",
+   "Cutoff": "y>=3",
+   "NRI": "0.131",
+   "IDI": "0.007"
+  },
+  {
+   "Increment": "ICU timeseries (XGB static+TS vs XGB static)",
+   "Cutoff": "y>=4",
+   "NRI": "0.177",
+   "IDI": "0.016"
+  },
+  {
+   "Increment": "ICU timeseries (XGB static+TS vs XGB static)",
+   "Cutoff": "y>=5",
+   "NRI": "0.460",
+   "IDI": "0.060"
+  },
+  {
+   "Increment": "pathway prior (DG-GRU+TPR vs DG-GRU)",
+   "Cutoff": "y>=1",
+   "NRI": "-0.255",
+   "IDI": "-0.002"
+  },
+  {
+   "Increment": "pathway prior (DG-GRU+TPR vs DG-GRU)",
+   "Cutoff": "y>=2",
+   "NRI": "-0.195",
+   "IDI": "-0.000"
+  },
+  {
+   "Increment": "pathway prior (DG-GRU+TPR vs DG-GRU)",
+   "Cutoff": "y>=3",
+   "NRI": "-0.345",
+   "IDI": "-0.004"
+  },
+  {
+   "Increment": "pathway prior (DG-GRU+TPR vs DG-GRU)",
+   "Cutoff": "y>=4",
+   "NRI": "-0.363",
+   "IDI": "-0.006"
+  },
+  {
+   "Increment": "pathway prior (DG-GRU+TPR vs DG-GRU)",
+   "Cutoff": "y>=5",
+   "NRI": "-0.232",
+   "IDI": "-0.012"
+  }
+ ],
+ "tables_Table5": [
+  {
+   "Feature group": "Labs",
+   "Gain": "0.48"
+  },
+  {
+   "Feature group": "GCS",
+   "Gain": "0.19"
+  },
+  {
+   "Feature group": "Vitals",
+   "Gain": "0.15"
+  },
+  {
+   "Feature group": "Motor exam",
+   "Gain": "0.09"
+  },
+  {
+   "Feature group": "Other",
+   "Gain": "0.07"
+  },
+  {
+   "Feature group": "Demographics",
+   "Gain": "0.01"
+  }
+ ],
+ "temporal_atlas_rows": 12614,
+ "temporal_atlas_cols": [
+  "pathway",
+  "dataset",
+  "phase",
+  "dir",
+  "stat",
+  "p",
+  "n",
+  "fdr"
+ ],
+ "external_validation": {
+  "mrs": {
+   "n": 511,
+   "mrs_dist": [
+    112,
+    118,
+    133,
+    62,
+    40,
+    26,
+    20
+   ],
+   "internal_binary_auroc": 0.739,
+   "internal_binary_sd": 0.042,
+   "internal_ordinal_macroauc": 0.556,
+   "internal_supp_binary_auroc": 0.7,
+   "internal_supp_binary_sd": 0.06,
+   "internal_supp_ordinal_macroauc": 0.565,
+   "mimic_shared_internal_auroc": 0.77,
+   "mimic_to_mrs_transfer_auroc": 0.635,
+   "recalibration_slope_raw": 0.486,
+   "recalibration_intercept_raw": -1.254,
+   "recalibration_slope_iso": 0.644,
+   "recalibration_auc_iso": 0.626,
+   "internal_recal_slope_platt": 0.954,
+   "internal_recal_intercept_platt": -0.038,
+   "internal_recal_auc_platt": 0.632
+  }
+ }
+}

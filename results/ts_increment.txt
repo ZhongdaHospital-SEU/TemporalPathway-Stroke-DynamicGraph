@@ -1,0 +1,2 @@
+XGB static-only | acc: 0.4835+/-0.0114 | kappa: 0.3585 | auc: 0.8100+/-0.0094
+XGB static+TS | acc: 0.4928+/-0.0092 | kappa: 0.3700 | auc: 0.8134+/-0.0118

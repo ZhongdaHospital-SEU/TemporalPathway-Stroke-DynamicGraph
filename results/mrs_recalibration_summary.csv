@@ -1,0 +1,10 @@
+metric,value
+transfer_auroc,0.635
+slope_raw,0.486
+intercept_raw,-1.254
+slope_iso,0.644
+intercept_iso,-1.18
+slope_platt,0.644
+intercept_platt,-1.18
+auc_iso,0.626
+auc_platt,0.626

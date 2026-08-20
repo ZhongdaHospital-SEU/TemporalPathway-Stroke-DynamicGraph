@@ -1,0 +1,71 @@
+pathway,database,direction,t,p,FDR
+positive regulation of telomerase RNA localization to Cajal body (GO:1904874),Gene Ontology BP,Up,5.89,P<0.001,0.006
+negative regulation of DNA recombination at telomere (GO:0048239),Gene Ontology BP,Up,5.28,P<0.001,0.006
+mitotic nuclear membrane reassembly (GO:0007084),Gene Ontology BP,Up,5.37,P<0.001,0.006
+regulation of DNA recombination at telomere (GO:0072695),Gene Ontology BP,Up,5.28,P<0.001,0.006
+mitotic nuclear membrane organization (GO:0101024),Gene Ontology BP,Up,5.37,P<0.001,0.006
+nuclear membrane reassembly (GO:0031468),Gene Ontology BP,Up,5.38,P<0.001,0.006
+Inhibition of DNA recombination at telomere,Reactome,Up,5.28,P<0.001,0.006
+chondroitin sulfate metabolic process (GO:0030204),Gene Ontology BP,Down,-5.57,P<0.001,0.006
+Recognition and association of DNA glycosylase with site containing an affected pyrimidine,Reactome,Up,5.11,P<0.001,0.007
+Cleavage of the damaged pyrimidine,Reactome,Up,5.11,P<0.001,0.007
+Depyrimidination,Reactome,Up,5.11,P<0.001,0.007
+dopaminergic neuron differentiation (GO:0071542),Gene Ontology BP,Down,-5.13,P<0.001,0.007
+protein K63-linked ubiquitination (GO:0070534),Gene Ontology BP,Down,-5.01,P<0.001,0.009
+nucleic acid-templated transcription (GO:0097659),Gene Ontology BP,Up,4.93,P<0.001,0.01
+Metabolism,Reactome,Up,4.81,P<0.001,0.014
+RUNX1 regulates transcription of genes involved in WNT signaling,Reactome,Up,4.74,P<0.001,0.016
+"DNA catabolic process, endonucleolytic (GO:0000737)",Gene Ontology BP,Down,-4.69,P<0.001,0.016
+cellular response to nitrogen starvation (GO:0006995),Gene Ontology BP,Down,-4.67,P<0.001,0.016
+cellular response to nitrogen levels (GO:0043562),Gene Ontology BP,Down,-4.67,P<0.001,0.016
+histone H3-K4 methylation (GO:0051568),Gene Ontology BP,Up,4.64,P<0.001,0.017
+Telomere C-strand synthesis initiation,Reactome,Up,4.58,P<0.001,0.018
+Regulation of NFE2L2 gene expression,Reactome,Up,4.6,P<0.001,0.018
+positive regulation of protein import (GO:1904591),Gene Ontology BP,Up,4.52,P<0.001,0.02
+Mitochondrial RNA degradation,Reactome,Down,-4.53,P<0.001,0.02
+SUMOylation of SUMOylation proteins,Reactome,Up,4.5,P<0.001,0.02
+positive regulation of protein import into nucleus (GO:0042307),Gene Ontology BP,Up,4.42,P<0.001,0.025
+"nuclear-transcribed mRNA catabolic process, exonucleolytic (GO:0000291)",Gene Ontology BP,Down,-4.37,P<0.001,0.025
+"mitochondrial electron transport, ubiquinol to cytochrome c (GO:0006122)",Gene Ontology BP,Down,-4.39,P<0.001,0.025
+"Base-Excision Repair, AP Site Formation",Reactome,Up,4.37,P<0.001,0.025
+Removal of the Flap Intermediate from the C-strand,Reactome,Up,4.38,P<0.001,0.025
+positive regulation of circadian rhythm (GO:0042753),Gene Ontology BP,Down,-4.35,P<0.001,0.025
+microvillus assembly (GO:0030033),Gene Ontology BP,Up,4.3,P<0.001,0.026
+Acute myeloid leukemia,KEGG,Up,4.32,P<0.001,0.026
+"nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay (GO:0000288)",Gene Ontology BP,Down,-4.32,P<0.001,0.026
+Processive synthesis on the C-strand of the telomere,Reactome,Up,4.3,P<0.001,0.026
+Regulation of HSF1-mediated heat shock response,Reactome,Up,4.2,P<0.001,0.033
+HIV Transcription Initiation,Reactome,Up,4.1,P<0.001,0.034
+protein export from nucleus (GO:0006611),Gene Ontology BP,Up,4.1,P<0.001,0.034
+Neddylation,Reactome,Down,-4.12,P<0.001,0.034
+RNA Polymerase II Pre-transcription Events,Reactome,Up,4.19,P<0.001,0.034
+positive regulation of neural precursor cell proliferation (GO:2000179),Gene Ontology BP,Down,-4.1,P<0.001,0.034
+RNA Polymerase II Transcription Initiation,Reactome,Up,4.1,P<0.001,0.034
+RNA Polymerase II Transcription Initiation And Promoter Clearance,Reactome,Up,4.1,P<0.001,0.034
+RNA Polymerase II Transcription Pre-Initiation And Promoter Opening,Reactome,Up,4.1,P<0.001,0.034
+rRNA modification in the mitochondrion,Reactome,Up,4.11,P<0.001,0.034
+reticulophagy (GO:0061709),Gene Ontology BP,Down,-4.11,P<0.001,0.034
+RNA Polymerase II Promoter Escape,Reactome,Up,4.1,P<0.001,0.034
+RNA Polymerase II HIV Promoter Escape,Reactome,Up,4.1,P<0.001,0.034
+RUNX1 regulates transcription of genes involved in differentiation of keratinocytes,Reactome,Down,-4.07,P<0.001,0.035
+IRE1alpha activates chaperones,Reactome,Up,4.08,P<0.001,0.035
+Cellular response to heat stress,Reactome,Up,4.06,P<0.001,0.035
+regulation of establishment of protein localization to telomere (GO:0070203),Gene Ontology BP,Up,4.03,P<0.001,0.036
+XBP1(S) activates chaperone genes,Reactome,Up,4.03,P<0.001,0.036
+RHOB GTPase cycle,Reactome,Down,-4.04,P<0.001,0.036
+Coenzyme A biosynthesis,Reactome,Down,-4.01,P<0.001,0.038
+positive regulation of nucleocytoplasmic transport (GO:0046824),Gene Ontology BP,Up,4.0,P<0.001,0.038
+Initiation of Nuclear Envelope (NE) Reformation,Reactome,Up,3.97,P<0.001,0.041
+The role of Nef in HIV-1 replication and disease pathogenesis,Reactome,Up,3.96,P<0.001,0.041
+positive regulation of telomerase activity (GO:0051973),Gene Ontology BP,Up,3.92,P<0.001,0.045
+mRNA Splicing - Minor Pathway,Reactome,Down,-3.9,P<0.001,0.046
+Packaging Of Telomere Ends,Reactome,Up,3.9,P<0.001,0.046
+regulation of G1/S transition of mitotic cell cycle (GO:2000045),Gene Ontology BP,Down,-3.9,P<0.001,0.046
+chondroitin sulfate biosynthetic process (GO:0030206),Gene Ontology BP,Down,-3.89,P<0.001,0.046
+exonucleolytic catabolism of deadenylated mRNA (GO:0043928),Gene Ontology BP,Down,-3.89,P<0.001,0.046
+regulation of protein localization to Cajal body (GO:1904869),Gene Ontology BP,Up,3.86,P<0.001,0.046
+Nuclear Envelope (NE) Reassembly,Reactome,Up,3.88,P<0.001,0.046
+positive regulation of protein localization to Cajal body (GO:1904871),Gene Ontology BP,Up,3.86,P<0.001,0.046
+Basal transcription factors,KEGG,Up,3.87,P<0.001,0.046
+Loss of MECP2 binding ability to the NCoR/SMRT complex,Reactome,Up,3.84,P<0.001,0.049
+RNA polymerase II preinitiation complex assembly (GO:0051123),Gene Ontology BP,Up,3.83,P<0.001,0.05

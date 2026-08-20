@@ -1,0 +1,17 @@
+                                            label     n  macro_auc      acc    kappa
+                             mimic_oof_xgb_static  2875   0.765699 0.455304 0.305935
+                          mimic_oof_xgb_static_ts  2875   0.818500 0.516174 0.385032
+                         eicu_transfer_xgb_static  2477   0.731989 0.364554 0.190966
+      eicu_transfer_xgb_static_mortality_auc_full 12820   0.864353 0.069340      NaN
+   eicu_transfer_xgb_static_mortality_auc_ordinal  2477   0.850450      NaN      NaN
+         eicu_transfer_xgb_static_calib_slope_int  2477   1.282374 0.459026      NaN
+           eicu_transfer_xgb_static_hosp_mort_auc    73   0.872831 0.672414 1.000000
+                      eicu_transfer_xgb_static_ts  2477   0.809111 0.396851 0.233644
+   eicu_transfer_xgb_static_ts_mortality_auc_full 12820   0.961997 0.045554      NaN
+eicu_transfer_xgb_static_ts_mortality_auc_ordinal  2477   0.942287      NaN      NaN
+      eicu_transfer_xgb_static_ts_calib_slope_int  2477   1.297386 0.666356      NaN
+        eicu_transfer_xgb_static_ts_hosp_mort_auc    73   0.979798 0.769231 1.000000
+                               eicu_cv_xgb_static  2477   0.812009 0.660476 0.491724
+                 eicu_cv_xgb_static_mortality_auc  2477   0.892998      NaN      NaN
+                            eicu_cv_xgb_static_ts  2477   0.905005 0.802180 0.706523
+              eicu_cv_xgb_static_ts_mortality_auc  2477   0.983633      NaN      NaN

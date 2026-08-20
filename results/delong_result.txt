@@ -1,0 +1,8 @@
+=== DeLong paired test: stack2 vs XGB static+TS (per class) ===
+class 0: dAUC=+0.0049 z=1.98 p=0.0480
+class 1: dAUC=-0.0019 z=-0.31 p=0.7547
+class 2: dAUC=+0.0040 z=1.20 p=0.2306
+class 3: dAUC=+0.0022 z=0.40 p=0.6873
+class 4: dAUC=+0.0108 z=1.98 p=0.0472
+class 5: dAUC=+0.0014 z=0.85 p=0.3943
+mean dAUC=+0.0036 mean z=1.02 min p=0.0472

@@ -1,0 +1,9 @@
+metric,value
+mrs_internal_recal_slope_raw,0.491489578930767
+mrs_internal_recal_intercept_raw,-1.2580688280619732
+mrs_internal_recal_slope_iso,0.10625418691351966
+mrs_internal_recal_intercept_iso,-0.794865913048774
+mrs_internal_recal_auc_iso,0.5950413223140496
+mrs_internal_recal_slope_platt,0.9538271731758622
+mrs_internal_recal_intercept_platt,-0.03836429271121923
+mrs_internal_recal_auc_platt,0.6321941776487231

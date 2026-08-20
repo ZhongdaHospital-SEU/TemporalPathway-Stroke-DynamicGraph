@@ -1,0 +1,49 @@
+﻿# ---- Raw clinical databases (PhysioNet DUA prohibits redistribution) ----
+mimic-iv-3.1/
+mimic-iii-clinical-database-1.4_1/
+mimic-iii-clinical-database-1.4_1.zip
+eicu/
+
+# ---- Local raw data store (GEO downloads etc.) ----
+data/
+
+# ---- Work directory: intermediate outputs, backups, patient-derived files ----
+work/*
+!work/numbers_master.json
+!work/harmonized_schema.json
+
+# ---- Real patient data / spreadsheets (never commit) ----
+*.xlsx
+*.docx
+MRS clinical data.xlsx
+MRS临床数据.xlsx
+
+# ---- Patient-level derived label file ----
+results/combined_proxy_label.csv
+
+# ---- Reference / personal PDFs ----
+*.pdf
+citiCompletionCertificate_*.pdf
+citiCompletionReport_*.pdf
+
+# ---- Misc local files ----
+100lai-folder-3452123e.exe
+新建文本文档.txt
+startup.log
+*.log
+
+# ---- Large binaries / archives ----
+*.zip
+*.gz
+*.npz
+*.npy
+
+# ---- Python caches ----
+__pycache__/
+*.pyc
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

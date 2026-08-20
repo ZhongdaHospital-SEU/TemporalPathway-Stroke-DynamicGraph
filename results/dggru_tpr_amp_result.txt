@@ -1,0 +1,1 @@
+dggru_tpr_amp ordinal | acc: 0.4717+/-0.0040 | kappa: 0.3648 | auc: 0.8112+/-0.0065

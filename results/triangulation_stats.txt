@@ -1,0 +1,50 @@
+==============================================================================
+Outcome triangulation of the ordinal discharge-disposition proxy
+MIMIC-IV stroke ICU cohort (n = 2875); OOF predictions, 5-fold CV
+==============================================================================
+Ordinal outcome: HOME(0) < HOME CARE(1) < REHAB(2) < SNF(3) < HOSPICE(4) < DIED(5)
+Outcome counts: HOME=468, HOME CARE=365, REHAB=833, SNF=394, HOSPICE=329, DIED=486
+hospital_expire_flag=1: 481 | hospital LOS: mean 13.9, median 8.7, p99 76.0 days
+
+------------------------------------------------------------------------------
+Stacked ensemble (XGB+TS + XGB-static + DG-GRU+TPR)
+  AUROC in-hospital mortality (DIED vs rest, n_pos=486): 0.9724
+  AUROC discharge home (HOME vs rest, n_pos=468): 0.9046
+  AUROC hospital_expire_flag (hard endpoint, n_pos=481): 0.9722
+  Spearman rho(predicted expected level, LOS winsorized p99): 0.4166 (p=4.43e-121) | raw LOS: 0.4166 (p=4.46e-121)
+  Mean predicted expected level by true outcome class:
+    HOME      y=0: 1.117  (n=468)
+    HOME CARE y=1: 1.772  (n=365)
+    REHAB     y=2: 2.044  (n=833)
+    SNF       y=3: 2.362  (n=394)
+    HOSPICE   y=4: 3.110  (n=329)
+    DIED      y=5: 4.390  (n=486)
+  Adjacent-pair deltas: HOME->HOME CARE +0.655, HOME CARE->REHAB +0.271, REHAB->SNF +0.318, SNF->HOSPICE +0.748, HOSPICE->DIED +1.280  -> pairwise monotonic: True (5/5 pairs increasing)
+  Mean predicted expected level across LOS quintiles:
+    Q1 [0.1-3.7 d, n=575]: 2.013
+    Q2 [3.7-6.8 d, n=575]: 2.083
+    Q3 [6.8-11.2 d, n=575]: 2.373
+    Q4 [11.2-20.8 d, n=575]: 2.689
+    Q5 [20.8-76.0 d, n=575]: 2.945
+  -> LOS-quintile trend monotonic: 1 (4/4 increasing)
+------------------------------------------------------------------------------
+XGB static+TS
+  AUROC in-hospital mortality (DIED vs rest, n_pos=486): 0.9709
+  AUROC discharge home (HOME vs rest, n_pos=468): 0.8996
+  AUROC hospital_expire_flag (hard endpoint, n_pos=481): 0.9709
+  Spearman rho(predicted expected level, LOS winsorized p99): 0.4260 (p=4.34e-127) | raw LOS: 0.4260 (p=4.36e-127)
+  Mean predicted expected level by true outcome class:
+    HOME      y=0: 1.018  (n=468)
+    HOME CARE y=1: 1.689  (n=365)
+    REHAB     y=2: 2.021  (n=833)
+    SNF       y=3: 2.387  (n=394)
+    HOSPICE   y=4: 3.175  (n=329)
+    DIED      y=5: 4.482  (n=486)
+  Adjacent-pair deltas: HOME->HOME CARE +0.671, HOME CARE->REHAB +0.332, REHAB->SNF +0.367, SNF->HOSPICE +0.787, HOSPICE->DIED +1.307  -> pairwise monotonic: True (5/5 pairs increasing)
+  Mean predicted expected level across LOS quintiles:
+    Q1 [0.1-3.7 d, n=575]: 1.936
+    Q2 [3.7-6.8 d, n=575]: 2.027
+    Q3 [6.8-11.2 d, n=575]: 2.352
+    Q4 [11.2-20.8 d, n=575]: 2.711
+    Q5 [20.8-76.0 d, n=575]: 3.042
+  -> LOS-quintile trend monotonic: 1 (4/4 increasing)

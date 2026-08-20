@@ -1,0 +1,3 @@
+XGB static-only (full cohort) | acc: 0.4901 | kappa: 0.3663 | auc: 0.8142
+XGB static-only (ICU subset) | acc: 0.5117 | kappa: 0.3809 | auc: 0.8175
+XGB static+TS (ICU subset) | acc: 0.5297 | kappa: 0.4024 | auc: 0.8262

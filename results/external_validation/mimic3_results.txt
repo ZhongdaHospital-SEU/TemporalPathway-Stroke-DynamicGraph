@@ -1,0 +1,21 @@
+                                              label                 era                  metric    n  macro_auc       acc    kappa
+                         mimic3_transfer_xgb_static                full        4class_macro_auc 5536   0.778433  0.542088 0.313663
+      mimic3_transfer_xgb_static_mortality_auc_full                full         mortality_auroc 6172   0.862566  0.102942      NaN
+   mimic3_transfer_xgb_static_mortality_auc_ordinal                full mortality_auroc_ordinal 5536   0.858880       NaN      NaN
+                         mimic3_transfer_xgb_static early_shifted_years        4class_macro_auc 2982   0.779395  0.539906 0.311124
+      mimic3_transfer_xgb_static_mortality_auc_full early_shifted_years         mortality_auroc 3315   0.866900  0.105885      NaN
+   mimic3_transfer_xgb_static_mortality_auc_ordinal early_shifted_years mortality_auroc_ordinal 2982   0.862403       NaN      NaN
+                         mimic3_transfer_xgb_static  late_shifted_years        4class_macro_auc 2554   0.777337  0.544636 0.316619
+      mimic3_transfer_xgb_static_mortality_auc_full  late_shifted_years         mortality_auroc 2857   0.857764  0.099528      NaN
+   mimic3_transfer_xgb_static_mortality_auc_ordinal  late_shifted_years mortality_auroc_ordinal 2554   0.854868       NaN      NaN
+         mimic3_transfer_xgb_static_calib_slope_int                full         calib_slope_int 5536   1.060356 -0.141997      NaN
+                      mimic3_transfer_xgb_static_ts                full        4class_macro_auc 5536   0.813698  0.571171 0.378251
+   mimic3_transfer_xgb_static_ts_mortality_auc_full                full         mortality_auroc 6172   0.920208  0.080454      NaN
+mimic3_transfer_xgb_static_ts_mortality_auc_ordinal                full mortality_auroc_ordinal 5536   0.924403       NaN      NaN
+                      mimic3_transfer_xgb_static_ts early_shifted_years        4class_macro_auc 2982   0.812390  0.568746 0.376208
+   mimic3_transfer_xgb_static_ts_mortality_auc_full early_shifted_years         mortality_auroc 3315   0.919347  0.080437      NaN
+mimic3_transfer_xgb_static_ts_mortality_auc_ordinal early_shifted_years mortality_auroc_ordinal 2982   0.921713       NaN      NaN
+                      mimic3_transfer_xgb_static_ts  late_shifted_years        4class_macro_auc 2554   0.815298  0.574002 0.380535
+   mimic3_transfer_xgb_static_ts_mortality_auc_full  late_shifted_years         mortality_auroc 2857   0.922522  0.080473      NaN
+mimic3_transfer_xgb_static_ts_mortality_auc_ordinal  late_shifted_years mortality_auroc_ordinal 2554   0.928625       NaN      NaN
+      mimic3_transfer_xgb_static_ts_calib_slope_int                full         calib_slope_int 5536   0.708505 -0.528459      NaN

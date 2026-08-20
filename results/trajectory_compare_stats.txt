@@ -1,0 +1,35 @@
+Temporal-pathway-prior trajectory comparison (full ICU cohort)
+n patients = 2875; epochs = 20; batch = 256; seed = 42
+
+Monotonicity violations (patients with >=1 negative valid-step delta):
+  DG-GRU (no TPR): 0.9997  (2874/2875)
+  DG-GRU+TPR:      0.9993  (2873/2875)
+  absolute reduction: 0.0003
+
+Negative-delta fraction over all valid step pairs:
+  no-TPR: 0.53292 (85911/161209); TPR: 0.53027 (85485/161209)
+
+Mean monotonicity-violation magnitude (mean ReLU(-delta) over valid pairs):
+  no-TPR: 0.04669; TPR: 0.01699; reduction: 63.6%
+
+Mean absolute step delta (total-variation proxy):
+  no-TPR: 0.09103; TPR: 0.03436; reduction: 62.3%
+
+Mean absolute drift |s_last - s_first|:
+  no-TPR: 0.73679; TPR: 0.32101
+  paired mean diff (TPR - no-TPR): -0.41578; Wilcoxon p=0.000e+00
+
+Mean net change (s_last - s_first):
+  no-TPR: -0.13125; TPR: 0.02069; diff=0.15194; Wilcoxon p=8.026e-57
+
+Mean per-step delta over all valid pairs:
+  no-TPR: -0.00234; TPR: 0.00037
+
+Per-class mean recovery score (all valid steps):
+  class        n    no-TPR    TPR
+  HOME          468    0.8440   0.7888
+  HOME CARE     365    1.0665   0.9754
+  REHAB         833    1.4057   1.2261
+  SNF           394    1.5022   1.3655
+  HOSPICE       329    1.4506   1.4408
+  DIED          486    1.3716   1.4997

@@ -1,0 +1,66 @@
+=== Ordinal discrimination (OOF, ICU subset n=2875) ===
+XGB static           acc=0.5117 kappa=0.3809 macroAUC=0.8172 SomersD=0.6368 Brier=0.1024
+XGB static+TS        acc=0.5297 kappa=0.4024 macroAUC=0.8260 SomersD=0.6443 Brier=0.0994
+dggru                acc=0.4755 kappa=0.3708 macroAUC=0.8132 SomersD=0.6287 Brier=0.1069
+dggru_tpr_amp        acc=0.4717 kappa=0.3648 macroAUC=0.8107 SomersD=0.6279 Brier=0.1078
+dggru_tpr_anti       acc=0.4713 kappa=0.3658 macroAUC=0.8140 SomersD=0.6305 Brier=0.1066
+dggru_tpr_m0.05_d0.01 acc=0.4723 kappa=0.3671 macroAUC=0.8135 SomersD=0.6300 Brier=0.1067
+dggru_tpr_m0.05_d0.05 acc=0.4699 kappa=0.3644 macroAUC=0.8136 SomersD=0.6302 Brier=0.1067
+dggru_tpr_m0.05_d0.1 acc=0.4720 kappa=0.3667 macroAUC=0.8135 SomersD=0.6301 Brier=0.1067
+dggru_tpr_m0.1_d0.01 acc=0.4710 kappa=0.3651 macroAUC=0.8137 SomersD=0.6303 Brier=0.1067
+dggru_tpr_m0.1_d0.05 acc=0.4696 kappa=0.3639 macroAUC=0.8137 SomersD=0.6302 Brier=0.1067
+dggru_tpr_m0.1_d0.1  acc=0.4710 kappa=0.3657 macroAUC=0.8137 SomersD=0.6302 Brier=0.1067
+dggru_tpr_m0.2_d0.01 acc=0.4710 kappa=0.3650 macroAUC=0.8141 SomersD=0.6306 Brier=0.1066
+dggru_tpr_m0.2_d0.2  acc=0.4696 kappa=0.3637 macroAUC=0.8140 SomersD=0.6304 Brier=0.1067
+dggru_tpr_m0.5_d0.01 acc=0.4706 kappa=0.3648 macroAUC=0.8149 SomersD=0.6307 Brier=0.1064
+dggru_tpr_m0.5_d0.05 acc=0.4710 kappa=0.3652 macroAUC=0.8148 SomersD=0.6305 Brier=0.1064
+dggru_tpr_m0.5_d0.1  acc=0.4699 kappa=0.3641 macroAUC=0.8147 SomersD=0.6303 Brier=0.1065
+dggru_tpr_m1.0_d0.01 acc=0.4699 kappa=0.3637 macroAUC=0.8159 SomersD=0.6312 Brier=0.1061
+dggru_tpr_m1.0_d0.05 acc=0.4689 kappa=0.3628 macroAUC=0.8155 SomersD=0.6306 Brier=0.1063
+dggru_tpr_m1.0_d0.1  acc=0.4692 kappa=0.3633 macroAUC=0.8153 SomersD=0.6306 Brier=0.1063
+dggru_tpr_m2.0_d0.01 acc=0.4727 kappa=0.3670 macroAUC=0.8167 SomersD=0.6316 Brier=0.1059
+dggru_tpr_m2.0_d0.05 acc=0.4689 kappa=0.3630 macroAUC=0.8163 SomersD=0.6314 Brier=0.1061
+dggru_tpr_m2.0_d0.1  acc=0.4682 kappa=0.3623 macroAUC=0.8159 SomersD=0.6312 Brier=0.1063
+dggru_tpr            acc=0.4699 kappa=0.3643 macroAUC=0.8141 SomersD=0.6305 Brier=0.1066
+dggru_tpr_perm       acc=0.4779 kappa=0.3730 macroAUC=0.8147 SomersD=0.6297 Brier=0.1064
+gru_long             acc=0.4626 kappa=0.3535 macroAUC=0.8027 SomersD=0.6178 Brier=0.1114
+gru                  acc=0.4723 kappa=0.3667 macroAUC=0.8131 SomersD=0.6287 Brier=0.1072
+gru_seqonly          acc=0.4174 kappa=0.3013 macroAUC=0.7753 SomersD=0.5735 Brier=0.1124
+gru_tpr              acc=0.4727 kappa=0.3670 macroAUC=0.8148 SomersD=0.6316 Brier=0.1065
+gru_tsstatic         acc=0.4755 kappa=0.3693 macroAUC=0.8118 SomersD=0.6298 Brier=0.1076
+v2_bi_tsstatic       acc=0.4720 kappa=0.3600 macroAUC=0.7953 SomersD=0.6098 Brier=0.1209
+v2_dggru_tpr_bi_tsstatic acc=0.4703 kappa=0.3581 macroAUC=0.7958 SomersD=0.6102 Brier=0.1208
+Stack (proposed)     acc=0.5391 kappa=0.4073 macroAUC=0.8304 SomersD=0.6464 Brier=0.0982
+
+=== Incremental value: ICU timeseries (XGB static+TS vs XGB static) ===
+  cutoff y>=1: category-free NRI=+0.0996  IDI=+0.0016
+  cutoff y>=2: category-free NRI=+0.0952  IDI=+0.0033
+  cutoff y>=3: category-free NRI=+0.1308  IDI=+0.0071
+  cutoff y>=4: category-free NRI=+0.1768  IDI=+0.0161
+  cutoff y>=5: category-free NRI=+0.4603  IDI=+0.0605
+  mean NRI (cutoffs 1-5): +0.1925
+
+=== Incremental value: pathway prior (DG-GRU+TPR vs DG-GRU) ===
+  cutoff y>=1: category-free NRI=-0.2548  IDI=-0.0020
+  cutoff y>=2: category-free NRI=-0.1950  IDI=-0.0002
+  cutoff y>=3: category-free NRI=-0.3449  IDI=-0.0040
+  cutoff y>=4: category-free NRI=-0.3627  IDI=-0.0064
+  cutoff y>=5: category-free NRI=-0.2322  IDI=-0.0119
+  mean NRI (cutoffs 1-5): -0.2779
+  DCA y>=2 pt=0.1: NB XGB static+TS=0.6778 Stack (proposed)=0.6780 (d=+0.0003)
+  DCA y>=2 pt=0.2: NB XGB static+TS=0.6437 Stack (proposed)=0.6437 (d=-0.0000)
+  DCA y>=2 pt=0.3: NB XGB static+TS=0.6081 Stack (proposed)=0.6079 (d=-0.0003)
+  DCA y>=3 pt=0.1: NB XGB static+TS=0.3716 Stack (proposed)=0.3652 (d=-0.0064)
+  DCA y>=3 pt=0.2: NB XGB static+TS=0.3297 Stack (proposed)=0.3277 (d=-0.0019)
+  DCA y>=3 pt=0.3: NB XGB static+TS=0.2846 Stack (proposed)=0.2915 (d=+0.0069)
+  DCA y>=5 pt=0.1: NB XGB static+TS=0.1426 Stack (proposed)=0.1471 (d=+0.0044)
+  DCA y>=5 pt=0.2: NB XGB static+TS=0.1363 Stack (proposed)=0.1364 (d=+0.0002)
+  DCA y>=5 pt=0.3: NB XGB static+TS=0.1297 Stack (proposed)=0.1292 (d=-0.0005)
+
+=== Calibration (cumulative risk P(y>=k), deciles) ===
+  y>=1 xgb_static+ts slope=0.774 R=0.936
+  y>=1 Stack (proposed) slope=1.155 R=0.991
+  y>=2 xgb_static+ts slope=0.943 R=0.991
+  y>=2 Stack (proposed) slope=1.176 R=0.981
+  y>=3 xgb_static+ts slope=1.086 R=0.995
+  y>=3 Stack (proposed) slope=1.296 R=0.998

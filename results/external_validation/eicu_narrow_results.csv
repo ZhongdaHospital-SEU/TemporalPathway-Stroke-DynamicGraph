@@ -1,0 +1,15 @@
+label,n,macro_auc,acc,kappa
+eicu_narrow_transfer_xgb_static,1385,0.7373783775665799,0.34512635379061374,0.19281576180966264
+eicu_narrow_transfer_xgb_static_mortality_auc_full,7692,0.876758463917718,0.0619101918106058,
+eicu_narrow_transfer_xgb_static_mortality_auc_ordinal,1385,0.8733924279550043,,
+eicu_narrow_transfer_xgb_static_calib_slope_int,1385,1.3304892771173922,0.4681118064099755,
+eicu_narrow_transfer_xgb_static_hosp_mort_auc,57,0.8984375,0.5498084291187739,1.0
+eicu_narrow_transfer_xgb_static_ts,1385,0.8011193471807623,0.3667870036101083,0.22297480998900332
+eicu_narrow_transfer_xgb_static_ts_mortality_auc_full,7692,0.965979837056774,0.0404716686349643,
+eicu_narrow_transfer_xgb_static_ts_mortality_auc_ordinal,1385,0.9449782846005725,,
+eicu_narrow_transfer_xgb_static_ts_calib_slope_int,1385,1.3096445836937538,0.6990689461614126,
+eicu_narrow_transfer_xgb_static_ts_hosp_mort_auc,57,0.9848484848484849,0.8461538461538461,1.0
+eicu_narrow_cv_xgb_static,1385,0.7857878935864767,0.6584837545126354,0.4936182942232268
+eicu_narrow_cv_xgb_static_mortality_auc,1385,0.8932490173020432,,
+eicu_narrow_cv_xgb_static_ts,1385,0.8831998002079384,0.7819494584837545,0.6777533723529081
+eicu_narrow_cv_xgb_static_ts_mortality_auc,1385,0.9778723125143481,,

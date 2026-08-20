@@ -1,0 +1,10 @@
+LogReg(OVR) | acc: 0.4619 +/- 0.0111
+LogReg(OVR) | kappa: 0.3333 +/- 0.0138
+LogReg(OVR) | auc: 0.7850 +/- 0.0062
+RandomForest | acc: 0.4716 +/- 0.0137
+RandomForest | kappa: 0.3338 +/- 0.0172
+RandomForest | auc: 0.7983 +/- 0.0117
+XGBoost | acc: 0.4835 +/- 0.0114
+XGBoost | kappa: 0.3585 +/- 0.0139
+XGBoost | auc: 0.8100 +/- 0.0094
+Majority-class baseline accuracy: 0.2476

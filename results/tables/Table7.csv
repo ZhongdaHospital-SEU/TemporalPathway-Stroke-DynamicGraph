@@ -1,0 +1,60 @@
+cutoff,model,n,predicted_risk,observed_rate
+1,XGB-static+TS,5,0.091,0.4
+1,XGB-static+TS,67,0.154,0.194
+1,XGB-static+TS,101,0.252,0.287
+1,XGB-static+TS,98,0.349,0.296
+1,XGB-static+TS,89,0.448,0.449
+1,XGB-static+TS,87,0.549,0.609
+1,XGB-static+TS,117,0.648,0.624
+1,XGB-static+TS,134,0.757,0.724
+1,XGB-static+TS,268,0.856,0.81
+1,XGB-static+TS,1909,0.973,0.971
+1,Stack (proposed),16,0.178,0.125
+1,Stack (proposed),107,0.256,0.206
+1,Stack (proposed),119,0.349,0.336
+1,Stack (proposed),92,0.447,0.424
+1,Stack (proposed),87,0.551,0.425
+1,Stack (proposed),112,0.657,0.679
+1,Stack (proposed),169,0.752,0.686
+1,Stack (proposed),374,0.86,0.853
+1,Stack (proposed),1799,0.958,0.976
+2,XGB-static+TS,62,0.078,0.113
+2,XGB-static+TS,151,0.149,0.146
+2,XGB-static+TS,165,0.246,0.242
+2,XGB-static+TS,106,0.353,0.274
+2,XGB-static+TS,153,0.453,0.536
+2,XGB-static+TS,186,0.551,0.5
+2,XGB-static+TS,243,0.652,0.613
+2,XGB-static+TS,294,0.751,0.711
+2,XGB-static+TS,398,0.852,0.847
+2,XGB-static+TS,1117,0.965,0.962
+2,Stack (proposed),9,0.084,0.111
+2,Stack (proposed),174,0.153,0.126
+2,Stack (proposed),143,0.245,0.217
+2,Stack (proposed),115,0.35,0.27
+2,Stack (proposed),137,0.455,0.431
+2,Stack (proposed),167,0.549,0.461
+2,Stack (proposed),279,0.654,0.602
+2,Stack (proposed),426,0.753,0.732
+2,Stack (proposed),807,0.85,0.905
+2,Stack (proposed),618,0.963,0.989
+3,XGB-static+TS,690,0.051,0.042
+3,XGB-static+TS,416,0.145,0.163
+3,XGB-static+TS,315,0.247,0.327
+3,XGB-static+TS,222,0.346,0.324
+3,XGB-static+TS,208,0.445,0.442
+3,XGB-static+TS,179,0.551,0.587
+3,XGB-static+TS,141,0.648,0.631
+3,XGB-static+TS,125,0.748,0.752
+3,XGB-static+TS,134,0.849,0.881
+3,XGB-static+TS,445,0.975,0.987
+3,Stack (proposed),364,0.061,0.036
+3,Stack (proposed),545,0.156,0.09
+3,Stack (proposed),438,0.246,0.233
+3,Stack (proposed),310,0.347,0.374
+3,Stack (proposed),242,0.448,0.434
+3,Stack (proposed),191,0.547,0.581
+3,Stack (proposed),142,0.642,0.732
+3,Stack (proposed),116,0.746,0.836
+3,Stack (proposed),105,0.848,0.905
+3,Stack (proposed),422,0.964,0.988

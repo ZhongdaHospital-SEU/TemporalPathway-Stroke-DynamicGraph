@@ -1,0 +1,11 @@
+model,window_steps,latent_macroAUC
+notpr,6,0.6095
+notpr,12,0.6397
+notpr,24,0.6588
+notpr,48,0.6873
+notpr,64,0.7344
+tpr,6,0.6661
+tpr,12,0.6614
+tpr,24,0.6674
+tpr,48,0.6856
+tpr,64,0.7169

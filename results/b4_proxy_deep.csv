@@ -1,0 +1,5 @@
+metric,value
+poor_comb_auc,0.8167155917607952
+poor_comb_sd,0.023198927776916702
+poor_orig_auc,0.8061089911519246
+poor_orig_sd,0.03241114748528841

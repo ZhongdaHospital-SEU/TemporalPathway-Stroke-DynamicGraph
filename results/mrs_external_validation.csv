@@ -1,0 +1,16 @@
+metric,value
+mrs_n,511.0
+mrs_good_rate,0.71
+mrs_internal_binary_auroc,0.739
+mrs_internal_binary_sd,0.042
+mrs_internal_ordinal_macroauc,0.556
+mrs_internal_supp_binary_auroc,0.7
+mrs_internal_supp_binary_sd,0.06
+mrs_internal_supp_ordinal_macroauc,0.565
+mimic_shared_internal_auroc,0.77
+mimic_to_mrs_transfer_auroc,0.635
+mrs_internal_sharedonly_auroc,0.739
+recal_slope_raw,0.486
+recal_intercept_raw,-1.254
+recal_slope_iso,0.644
+recal_auc_iso,0.626

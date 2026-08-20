@@ -1,0 +1,13 @@
+spearman_expected_level_xgb_vs_dg = 0.9483
+pearson_expected_level_xgb_vs_dg = 0.9488
+spearman_p_class0 = 0.8919
+spearman_p_class1 = 0.8279
+spearman_p_class2 = 0.8155
+spearman_p_class3 = 0.8381
+spearman_p_class4 = 0.8359
+spearman_p_class5 = 0.8784
+top1_agreement_xgb_vs_dg = 0.5697
+accuracy_xgb = 0.5297
+accuracy_dg = 0.4699
+accuracy_stack = 0.5391
+stack_corrects_when_both_base_wrong = 0.0732

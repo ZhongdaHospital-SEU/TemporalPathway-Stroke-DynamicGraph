@@ -1,0 +1,72 @@
+PATHWAY CROSS-COHORT CONSISTENCY AND STROKE-PROCESS ENRICHMENT
+==============================================================================
+
+Atlas: 70 significant pathways (GSE37587 subacute, paired
+       Baseline -> Follow-Up within n=34 stroke patients, FDR < 0.05).
+Background: all 12614 atlas tests (GSE37587 subacute n=6308 +
+            GSE58294 acute n=6306, paired 3h -> 24h within n=23 patients).
+
+TASK 1 - CROSS-COHORT DIRECTION CONSISTENCY
+------------------------------------------------------------------------------
+
+What each cohort supports (no overclaiming):
+  - GSE16561_stroke_vs_control             [disease_vs_control] Whole-blood stroke (n=39) vs control (n=24); cross-sectional disease-state association, no time information available.
+  - GSE22255_stroke_vs_control             [disease_vs_control] Whole-blood stroke (n=20) vs control (n=20), acute phase; cross-sectional disease-state association.
+  - GSE58294_stroke_vs_control_3h          [disease_vs_control] Cardioembolic stroke (n=23) vs control (n=23) at 3h; cross-sectional disease-state association at an acute timepoint.
+  - GSE58294_stroke_vs_control_5h          [disease_vs_control] Cardioembolic stroke (n=23) vs control (n=23) at 5h; cross-sectional disease-state association at an acute timepoint.
+  - GSE58294_stroke_vs_control_24h         [disease_vs_control] Cardioembolic stroke (n=23) vs control (n=23) at 24h; cross-sectional disease-state association at an acute timepoint.
+  - GSE58294_24h_vs_3h                     [temporal_paired] Paired 3h -> 24h within cardioembolic stroke patients (n=23); direct temporal replication of the atlas acute-phase comparison.
+  - GSE37587 is the atlas cohort itself (the 70 were selected there);
+    it is not used as a replication cohort.
+
+Concordance = fraction of atlas pathways whose direction (up/down)
+matches the direction computed in the comparison cohort.
+Binomial sign test: two-sided exact test vs P = 0.5.
+
+comparison                               n70  conc   frac70   binomP70 |      nBg   concBg     fracBg     binomPBg |    fisherP
+-------------------------------------------------------------------------------------------------------------------------------
+GSE16561_stroke_vs_control                70    16    0.229   5.85e-06 |    12601     6351      0.504     3.73e-01 |   3.23e-06
+GSE22255_stroke_vs_control                70    34    0.486   9.05e-01 |    12599     6249      0.496     3.73e-01 |   9.05e-01
+GSE58294_stroke_vs_control_3h             70    33    0.471   7.20e-01 |    12599     4836      0.384    3.71e-151 |   1.40e-01
+GSE58294_stroke_vs_control_5h             70    25    0.357   2.25e-02 |    12599     6397      0.508     8.39e-02 |   1.59e-02
+GSE58294_stroke_vs_control_24h            70    30    0.429   2.82e-01 |    12599     7893      0.626    3.86e-179 |   1.12e-03
+GSE58294_24h_vs_3h                        70    24    0.343   1.15e-02 |     6293     3079      0.489     9.12e-02 |   1.60e-02
+
+Notes:
+  - Background for GSE58294_24h_vs_3h excludes the 6,306 GSE58294 acute
+    atlas rows (the same paired comparison would be trivially concordant),
+    leaving the 6,308 GSE37587 rows as the independent background; 6,293 of
+    these had computable directions in GSE58294 (15 lacked ssGSEA activity).
+  - For disease-vs-control comparisons, 'up' means higher in stroke than
+    control; for temporal comparisons 'up' means higher at the later time.
+  - fisherP = two-sided Fisher exact test comparing concordance among the
+    70 atlas pathways vs the background concordance rate.
+
+TASK 2 - STROKE-PROCESS ENRICHMENT
+------------------------------------------------------------------------------
+
+Classification: pathway-name keyword regex, single assignment by priority
+(coagulation > hypoxia/ischemia > inflammation/immune > neurogenesis/
+plasticity > metabolism > apoptosis > other).
+Test: hypergeometric enrichment (right tail), selected n=70 of N=12614;
+BH-FDR across 7 categories; OR with Haldane-Anscombe 0.5 correction.
+
+category                    bgN   bgProp   sigN  sigProp     fold       OR      CIlow     CIhigh          P        FDR
+inflammation/immune        1049   0.0832      0   0.0000     0.00     0.08       0.00       1.26   1.00e+00   1.00e+00
+hypoxia/ischemia            124   0.0098      0   0.0000     0.00     0.71       0.04      11.49   1.00e+00   1.00e+00
+coagulation                  90   0.0071      0   0.0000     0.00     0.98       0.06      15.88   1.00e+00   1.00e+00
+neurogenesis/plasticity     556   0.0441      3   0.0429     0.97     1.12       0.38       3.30   6.02e-01   1.00e+00
+metabolism                 1732   0.1373      9   0.1286     0.94     0.97       0.49       1.92   6.37e-01   1.00e+00
+apoptosis                   162   0.0128      0   0.0000     0.00     0.54       0.03       8.76   1.00e+00   1.00e+00
+other                      8901   0.7056     58   0.8286     1.17     1.96       1.06       3.61   1.34e-02   9.37e-02
+
+Examples among the 70 significant pathways per category:
+  neurogenesis/plasticity: GOBP:dopaminergic neuron differentiation (GO:0071542); GOBP:positive regulation of circadian rhythm (GO:0042753); GOBP:positive regulation of neural precursor cell proliferation (GO:2000179)
+  metabolism:              GOBP:chondroitin sulfate metabolic process (GO:0030204); REAC:Metabolism; GOBP:DNA catabolic process, endonucleolytic (GO:0000737); GOBP:cellular response to nitrogen starvation (GO:0006995); GOBP:cellular response to nitrogen levels (GO:0043562); GOBP:nuclear-transcribed mRNA catabolic process, exonucleolytic (GO:0000291); GOBP:mitochondrial electron transport, ubiquinol to cytochrome c (GO:0006122); GOBP:nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay (GO:0000288); REAC:Coenzyme A biosynthesis
+  other:                   GOBP:positive regulation of telomerase RNA localization to Cajal body (GO:1904874); GOBP:negative regulation of DNA recombination at telomere (GO:0048239); GOBP:mitotic nuclear membrane reassembly (GO:0007084); GOBP:regulation of DNA recombination at telomere (GO:0072695); GOBP:mitotic nuclear membrane organization (GO:0101024); GOBP:nuclear membrane reassembly (GO:0031468); REAC:Inhibition of DNA recombination at telomere; REAC:Recognition and association of DNA glycosylase with site containing an affected pyrimidine; REAC:Cleavage of the damaged pyrimidine; REAC:Depyrimidination; GOBP:protein K63-linked ubiquitination (GO:0070534); GOBP:nucleic acid-templated transcription (GO:0097659); REAC:RUNX1 regulates transcription of genes involved in WNT signaling; GOBP:histone H3-K4 methylation (GO:0051568); REAC:Telomere C-strand synthesis initiation; REAC:Regulation of NFE2L2 gene expression; GOBP:positive regulation of protein import (GO:1904591); REAC:Mitochondrial RNA degradation; REAC:SUMOylation of SUMOylation proteins; GOBP:positive regulation of protein import into nucleus (GO:0042307); REAC:Base-Excision Repair, AP Site Formation; REAC:Removal of the Flap Intermediate from the C-strand; GOBP:microvillus assembly (GO:0030033); KEGG:Acute myeloid leukemia; REAC:Processive synthesis on the C-strand of the telomere; REAC:Regulation of HSF1-mediated heat shock response; REAC:HIV Transcription Initiation; GOBP:protein export from nucleus (GO:0006611); REAC:Neddylation; REAC:RNA Polymerase II Pre-transcription Events; REAC:RNA Polymerase II Transcription Initiation; REAC:RNA Polymerase II Transcription Initiation And Promoter Clearance; REAC:RNA Polymerase II Transcription Pre-Initiation And Promoter Opening; REAC:rRNA modification in the mitochondrion; GOBP:reticulophagy (GO:0061709); REAC:RNA Polymerase II Promoter Escape; REAC:RNA Polymerase II HIV Promoter Escape; REAC:RUNX1 regulates transcription of genes involved in differentiation of keratinocytes; REAC:IRE1alpha activates chaperones; REAC:Cellular response to heat stress; GOBP:regulation of establishment of protein localization to telomere (GO:0070203); REAC:XBP1(S) activates chaperone genes; REAC:RHOB GTPase cycle; GOBP:positive regulation of nucleocytoplasmic transport (GO:0046824); REAC:Initiation of Nuclear Envelope (NE) Reformation; REAC:The role of Nef in HIV-1 replication and disease pathogenesis; GOBP:positive regulation of telomerase activity (GO:0051973); REAC:mRNA Splicing - Minor Pathway; REAC:Packaging Of Telomere Ends; GOBP:regulation of G1/S transition of mitotic cell cycle (GO:2000045); GOBP:chondroitin sulfate biosynthetic process (GO:0030206); GOBP:exonucleolytic catabolism of deadenylated mRNA (GO:0043928); GOBP:regulation of protein localization to Cajal body (GO:1904869); REAC:Nuclear Envelope (NE) Reassembly; GOBP:positive regulation of protein localization to Cajal body (GO:1904871); KEGG:Basal transcription factors; REAC:Loss of MECP2 binding ability to the NCoR/SMRT complex; GOBP:RNA polymerase II preinitiation complex assembly (GO:0051123)
+
+Outputs:
+  results/pathway_consistency.csv
+  results/pathway_process_enrichment.csv
+  D:\TT paper\0811Temporal Pathway\results\figures\panel_pathway_enrich.svg
+  D:\TT paper\0811Temporal Pathway\results\figures\panel_pathway_enrich.png

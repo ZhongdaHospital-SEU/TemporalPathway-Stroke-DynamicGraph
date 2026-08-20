@@ -1,0 +1,12 @@
+subgroup,n,auc
+Overall,511,0.635
+recanalization=IV-tPA,57,0.415
+recanalization=IV-tPA + MT,80,0.587
+recanalization=Mechanical thrombectomy,175,0.616
+recanalization=None,199,0.711
+age=<60,109,0.626
+age=60-74,238,0.624
+age=>=75,164,0.597
+nihss=0-5,126,0.56
+nihss=6-15,222,0.53
+nihss=>=16,163,0.56
