@@ -1,0 +1,9 @@
+metric,value
+raw_slope,0.654
+raw_intercept,-0.942
+raw_brier,0.213
+raw_auc,0.741
+iso_slope,0.85
+iso_intercept,-0.911
+iso_brier,0.201
+iso_auc,0.747

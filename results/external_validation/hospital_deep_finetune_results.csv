@@ -1,0 +1,4 @@
+mode,binary_auc,ordinal_macroauc
+pretrain_finetune,0.738,0.615
+scratch,0.542,0.555
+pretrain_frozen,0.716,0.602
