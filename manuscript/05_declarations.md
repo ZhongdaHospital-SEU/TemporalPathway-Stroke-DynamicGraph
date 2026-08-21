@@ -2,11 +2,11 @@
 
 ### Data availability
 
-The clinical data used in this study are from MIMIC-IV version 3.1 (https://physionet.org/content/mimiciv/) and the eICU Collaborative Research Database version 2.0 (https://physionet.org/content/eicu-crd/), publicly available de-identified critical-care databases distributed through PhysioNet, and from an independent cohort of 511 stroke patients with recorded 90-day modified Rankin Scale outcomes collected by the authors. Access to the PhysioNet databases requires credentialing and a data-use agreement; the derived cohort features used for modeling are available from the corresponding author upon reasonable request, subject to PhysioNet data-use restrictions and to the institutional data-use conditions of the mRS cohort. The transcriptomic data are publicly available from the Gene Expression Omnibus under accessions GSE37587, GSE58294, GSE16561, and GSE22255.
+The clinical data used in this study are from MIMIC-IV version 3.1 (https://physionet.org/content/mimiciv/) and the eICU Collaborative Research Database version 2.0 (https://physionet.org/content/eicu-crd/), publicly available de-identified critical-care databases distributed through PhysioNet, and from an independent cohort of 511 stroke patients with recorded 90-day modified Rankin Scale outcomes collected by the authors, and from a second independent cohort of 185 stroke patients with ICU time series and recorded 90-day modified Rankin Scale outcomes collected at a single tertiary hospital. Access to the PhysioNet databases requires credentialing and a data-use agreement; the derived cohort features used for modeling are available from the corresponding author upon reasonable request, subject to PhysioNet data-use restrictions and to the institutional data-use conditions of the two mRS cohorts. The transcriptomic data are publicly available from the Gene Expression Omnibus under accessions GSE37587, GSE58294, GSE16561, and GSE22255.
 
 ### Code availability
 
-All analysis code (cohort extraction, temporal pathway atlas, model training and evaluation, and the robustness and leakage-audit pipelines) is available at [repository URL to be completed] and archived at [DOI to be completed].
+All analysis code (cohort extraction, temporal pathway atlas, model training and evaluation, and the robustness and leakage-audit pipelines) is available at https://github.com/wangzhipeng-1/TemporalPathway-Stroke-DynamicGraph. The repository is private during peer review; access will be granted to editors and reviewers on request, and the repository will be made public upon acceptance. A versioned archival copy with a digital object identifier will be deposited at the time of publication.
 
 ### Reporting guidelines
 
@@ -14,23 +14,19 @@ The study is reported in accordance with the Transparent Reporting of a multivar
 
 ### Ethics approval and consent to participate
 
-This study used de-identified data. Use of MIMIC-IV and the eICU-CRD was approved through credentialed PhysioNet access, and use of these public research databases was determined to be exempt from institutional review board approval. The independent mRS cohort was collected by the authors and approved by the Ethics Committee of Zhongda Hospital, Southeast University, China [approval number to be completed], and all patients provided informed consent or were included under an approved waiver of consent, in accordance with applicable regulations. The GEO data were originally collected with participant consent and are redistributed in de-identified form.
+This study used de-identified data. Use of MIMIC-IV and the eICU-CRD was approved through credentialed PhysioNet access, and use of these public research databases was determined to be exempt from institutional review board approval. The independent mRS cohort was collected by the authors and approved by the Ethics Committee of Zhongda Hospital, Southeast University, China; all patients provided informed consent or were included under an approved waiver of consent, in accordance with applicable regulations. The hospital cohort of 185 patients was collected retrospectively from de-identified electronic health records at a single tertiary hospital in China and was approved by the Ethics Committee of Zhongda Hospital, Southeast University, China, with a waiver of informed consent. The GEO data were originally collected with participant consent and are redistributed in de-identified form.
 
 ### CRediT authorship contribution statement
 
-[To be completed: Conceptualization; Methodology; Software; Validation; Formal analysis; Investigation; Resources; Data curation; Writing (original draft); Writing (review and editing); Visualization; Supervision; Project administration; Funding acquisition.]
+Zhipeng Wang: Conceptualization, Methodology, Software, Formal analysis, Visualization, Writing – original draft. Luning Wang: Data curation, Investigation, Methodology, Writing – review & editing. Changsong Wang: Conceptualization, Supervision, Project administration, Funding acquisition, Writing – review & editing. Pengli Zhai: Data curation, Resources, Investigation. Hui Feng: Formal analysis, Visualization, Software. Hongmei Liu: Validation, Investigation, Resources. Qian Hou: Visualization, Software, Validation. Ming Guo: Validation, Writing – review & editing.
 
 ### Funding
 
-[To be completed.]
+This work was supported by the Higher Education Teaching Reform Research Project of Xuzhou Medical University (XYJG042).
 
 ### Competing interests
 
 The authors declare that they have no competing interests.
-
-### Acknowledgements
-
-[To be completed.]
 
 ### Use of artificial intelligence
 
@@ -77,7 +73,9 @@ During the preparation of this work the authors used artificial intelligence too
 18. Deng L, Cai Y, Zhang W, Yang W, Gao B, Liu H. Pathway-Guided Deep Neural Network toward Interpretable and Predictive Modeling of Drug Sensitivity. Journal of Chemical Information and Modeling 2020;60(10):4497-4505. doi:10.1021/acs.jcim.0c00331
 
 19. Johnson AEW, Bulgarelli L, Shen L, Gayles A, Shammout A, Horng S et al. MIMIC-IV, a freely accessible electronic health record dataset. Scientific Data 2023;10(1). doi:10.1038/s41597-022-01899-x
+
 20. Johnson AEW, Pollard TJ, Shen L, Lehman LH, Feng M, Ghassemi M et al. MIMIC-III, a freely accessible critical care database. Scientific Data 2016;3:160035. doi:10.1038/sdata.2016.35
+
 21. Pollard TJ, Johnson AEW, Raffa JD, Celi LA, Mark RG, Badawi O. The eICU Collaborative Research Database, a freely available multi-center database for critical care research. Scientific Data 2018;5:180178. doi:10.1038/sdata.2018.178
 
 22. Collins GS, Moons KGM, Dhiman P, Riley RD, Beam AL, Van Calster B et al. TRIPOD+AI statement: updated guidance for reporting clinical prediction models that use regression or machine learning methods. BMJ 2024;e078378. doi:10.1136/bmj-2023-078378
@@ -107,8 +105,11 @@ During the preparation of this work the authors used artificial intelligence too
 34. Chen T, Guestrin C. XGBoost. Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining 2016;785-794. doi:10.1145/2939672.2939785
 
 35. Cho K, van Merrienboer B, Gulcehre C, Bahdanau D, Bougares F, Schwenk H et al. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation. arXiv preprint arXiv:1406.1078 2014. doi:10.48550/arXiv.1406.1078
+
 36. Che Z, Purushotham S, Cho K, Sontag D, Liu Y. Recurrent Neural Networks for Multivariate Time Series with Missing Values. Scientific Reports 2018;8(1):6085. doi:10.1038/s41598-018-24271-9
+
 37. Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN et al. Attention Is All You Need. Advances in Neural Information Processing Systems 2017;30:5998-6008. doi:10.48550/arXiv.1706.03762
+
 38. Yu B, Yin H, Zhu Z. Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting. Proceedings of the Twenty-Seventh International Joint Conference on Artificial Intelligence 2018;3634-3640. doi:10.24963/ijcai.2018/153
 
 39. Scarselli F, Gori M, Ah Chung Tsoi, Hagenbuchner M, Monfardini G. The Graph Neural Network Model. IEEE Transactions on Neural Networks 2009;20(1):61-80. doi:10.1109/tnn.2008.2005605
