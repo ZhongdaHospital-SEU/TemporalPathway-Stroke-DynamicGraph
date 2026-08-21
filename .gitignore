@@ -49,3 +49,13 @@ Thumbs.db
 .vscode/
 
 *.bak
+
+# ---- Patient-level / clinical data (privacy & ethics: never commit) ----
+*clinical*.csv
+*patient*.csv
+*cohort*.csv
+*Hospital*Cohort*
+*hospital_static*
+*hospital_seqs*
+*_static.csv
+*_seqs.npz
