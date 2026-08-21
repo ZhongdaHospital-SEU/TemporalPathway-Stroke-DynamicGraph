@@ -1,0 +1,4 @@
+analysis,n,good,poor,binary_auc,ordinal_macroauc,mortality_auc,n_mortality
+orig_185,185,129,56,0.739,0.612,0.686,5
+fixed_185,185,129,56,0.739,0.612,0.789,12
+fixed_excl_lost_182,182,128,54,0.739,0.612,0.77,11
