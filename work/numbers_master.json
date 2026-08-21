@@ -3,21 +3,21 @@
   "XGB static": {
    "acc": 0.5117,
    "kappa": 0.3809,
-   "macroAUC": 0.8172,
+   "macroAUC": 0.8175,
    "somersD": 0.6368,
    "brier": 0.1024
   },
   "XGB static+TS": {
    "acc": 0.5297,
    "kappa": 0.4024,
-   "macroAUC": 0.826,
+   "macroAUC": 0.8262,
    "somersD": 0.6443,
    "brier": 0.0994
   },
   "dggru": {
    "acc": 0.4755,
    "kappa": 0.3708,
-   "macroAUC": 0.8132,
+   "macroAUC": 0.8136,
    "somersD": 0.6287,
    "brier": 0.1069
   },
@@ -31,70 +31,70 @@
   "dggru_tpr_anti": {
    "acc": 0.4713,
    "kappa": 0.3658,
-   "macroAUC": 0.814,
+   "macroAUC": 0.8146,
    "somersD": 0.6305,
    "brier": 0.1066
   },
   "dggru_tpr": {
    "acc": 0.4699,
    "kappa": 0.3643,
-   "macroAUC": 0.8141,
+   "macroAUC": 0.8147,
    "somersD": 0.6305,
    "brier": 0.1066
   },
   "dggru_tpr_perm": {
    "acc": 0.4779,
    "kappa": 0.373,
-   "macroAUC": 0.8147,
+   "macroAUC": 0.8152,
    "somersD": 0.6297,
    "brier": 0.1064
   },
   "gru_long": {
    "acc": 0.4626,
    "kappa": 0.3535,
-   "macroAUC": 0.8027,
+   "macroAUC": 0.8037,
    "somersD": 0.6178,
    "brier": 0.1114
   },
   "gru": {
    "acc": 0.4723,
    "kappa": 0.3667,
-   "macroAUC": 0.8131,
+   "macroAUC": 0.8139,
    "somersD": 0.6287,
    "brier": 0.1072
   },
   "gru_seqonly": {
    "acc": 0.4174,
    "kappa": 0.3013,
-   "macroAUC": 0.7753,
+   "macroAUC": 0.7774,
    "somersD": 0.5735,
    "brier": 0.1124
   },
   "gru_tpr": {
    "acc": 0.4727,
    "kappa": 0.367,
-   "macroAUC": 0.8148,
+   "macroAUC": 0.8152,
    "somersD": 0.6316,
    "brier": 0.1065
   },
   "gru_tsstatic": {
    "acc": 0.4755,
    "kappa": 0.3693,
-   "macroAUC": 0.8118,
+   "macroAUC": 0.8124,
    "somersD": 0.6298,
    "brier": 0.1076
   },
   "v2_bi_tsstatic": {
    "acc": 0.472,
    "kappa": 0.36,
-   "macroAUC": 0.7953,
+   "macroAUC": 0.7962,
    "somersD": 0.6098,
    "brier": 0.1209
   },
   "v2_dggru_tpr_bi_tsstatic": {
    "acc": 0.4703,
    "kappa": 0.3581,
-   "macroAUC": 0.7958,
+   "macroAUC": 0.7965,
    "somersD": 0.6102,
    "brier": 0.1208
   },
@@ -554,6 +554,41 @@
    "internal_recal_slope_platt": 0.954,
    "internal_recal_intercept_platt": -0.038,
    "internal_recal_auc_platt": 0.632
+  }
+ },
+ "interpretability": {
+  "plan6_intervention": {
+   "tpa": {
+    "n": 16,
+    "pre_mean": 1.2397,
+    "post_mean": 1.2601,
+    "delta_mean": 0.0204,
+    "delta_median": 0.0695,
+    "frac_up": 0.625,
+    "wilcoxon_p": 0.433,
+    "last_p": 0.821,
+    "seed7_delta": -0.0867,
+    "seed123_delta": -0.0052
+   },
+   "mt": {
+    "n": 13,
+    "pre_mean": 1.0571,
+    "post_mean": 1.1913,
+    "delta_mean": 0.1342,
+    "delta_median": 0.1907,
+    "frac_up": 0.769,
+    "wilcoxon_p": 0.11,
+    "seed7_delta": 0.161,
+    "seed123_delta": 0.0051
+   },
+   "controls": {
+    "n": 16,
+    "treated_delta": 0.0204,
+    "control_delta": 0.1332,
+    "mannwhitney_p": 0.78,
+    "wilcoxon_paired_p": 0.159
+   },
+   "note": "intervention-anchored latent recovery score; tPA exact-time anchor, MT day-level anchor; 1:1 time-matched untreated controls; exploratory null"
   }
  }
 }
