@@ -13,7 +13,7 @@ The framework combines three components:
 2. **Temporal pathway atlas** — a hypothesis-generating biological prior derived from four public blood transcriptomic stroke cohorts (GSE37587, GSE58294, GSE16561, GSE22255) using single-sample gene-set enrichment; 70 subacute-phase pathways are used as the prior.
 3. **DG-GRU+TPR** — a dynamic graph gated recurrent unit regularized by the pathway prior through monotone-progression and bounded-drift constraints on a latent recovery score, evaluated inside a level-1 logistic stacking ensemble.
 
-Internal validation uses five-fold stratified cross-validation. External validation is performed in the multi-center eICU-CRD and in the earlier MIMIC-III era, and the admission-time risk signal is additionally evaluated in an independent cohort of 511 patients with recorded 90-day modified Rankin Scale outcomes.
+Internal validation uses five-fold stratified cross-validation. External validation is performed in the multi-center eICU-CRD and in the earlier MIMIC-III era, and the admission-time risk signal is additionally evaluated in an independent cohort of 511 patients with recorded 90-day modified Rankin Scale outcomes. The deep temporal models are further validated in a 185-patient hospital cohort that combines ICU time series with recorded 90-day mRS outcomes.
 
 ## Repository layout
 
@@ -25,11 +25,15 @@ Internal validation uses five-fold stratified cross-validation. External validat
 - `work/numbers_master.json` — audited key numbers used by the consistency checks.
 - `work/harmonized_schema.json` — the harmonized eight-channel feature schema used for external validation.
 
-## Data access
+## Data access and privacy
 
-- MIMIC-IV v3.1, MIMIC-III v1.4, and eICU-CRD v2.0: PhysioNet credentialed access (https://physionet.org). Users must sign the relevant Data Use Agreement and place the files in the expected local paths before running the pipeline. Raw database files are **not** redistributed in this repository.
-- GEO cohorts GSE37587, GSE58294, GSE16561, GSE22255: public (NCBI GEO).
-- The independent 90-day mRS cohort is not redistributed; requests should be directed to the corresponding author.
+This repository provides analysis code, the harmonized feature schema, and aggregate results only. No raw database files, clinical records, or patient-level data are included, and none will be added.
+
+- MIMIC-IV v3.1, MIMIC-III v1.4, and eICU-CRD v2.0 are protected by the PhysioNet Data Use Agreement and cannot be redistributed. Users must obtain credentialed access at https://physionet.org, sign the relevant DUA, and place the files in the expected local paths before running the pipeline.
+- The independent cohort of 511 stroke patients with recorded 90-day modified Rankin Scale outcomes and the hospital cohort of 185 stroke patients with ICU time series and recorded 90-day mRS outcomes are de-identified but remain protected by institutional ethics approval and are not redistributed. Requests should be directed to the corresponding author.
+- GEO cohorts GSE37587, GSE58294, GSE16561, and GSE22255 are public and can be downloaded from NCBI GEO.
+
+All result tables in `results/` report aggregate metrics and contain no patient identifiers.
 
 ## Reproducibility
 
