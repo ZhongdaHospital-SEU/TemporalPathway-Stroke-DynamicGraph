@@ -1,0 +1,9 @@
+metric,value,note
+fixed_transfer_binary_auc,0.739,"label-fixed run, hospital_xgb_fixed.npz p_bin, matches manuscript 0.739"
+fixed_transfer_ordinal_macroauc,0.612,"one-vs-rest 6-class, matches manuscript 0.612"
+fixed_sub_age_lt65,0.767,n=... manuscript 0.767
+fixed_sub_age_65_79,0.724,manuscript 0.724
+fixed_sub_age_ge80,0.773,"n=32, manuscript 0.773"
+fixed_sub_ivt_yes,0.776,manuscript 0.776
+fixed_sub_ivt_no,0.745,manuscript 0.745
+fixed_sub_mt_yes,0.967,"n=13, manuscript 0.967"
