@@ -1,4 +1,4 @@
-## 6. Declarations
+﻿## 6. Declarations
 
 ### Data availability
 
@@ -6,7 +6,7 @@ The clinical data used in this study are from MIMIC-IV version 3.1 (https://phys
 
 ### Code availability
 
-All analysis code (cohort extraction, temporal pathway atlas, model training and evaluation, and the robustness and leakage-audit pipelines) is available at https://github.com/wangzhipeng-1/TemporalPathway-Stroke-DynamicGraph. The repository is private during peer review; access will be granted to editors and reviewers on request, and the repository will be made public upon acceptance. A versioned archival copy with a digital object identifier will be deposited at the time of publication.
+All analysis code (cohort extraction, temporal pathway atlas, model training and evaluation, and the robustness and leakage-audit pipelines) is available at https://github.com/ZhongdaHospital-SEU/TemporalPathway-Stroke-DynamicGraph. The repository is private during peer review; access will be granted to editors and reviewers on request, and the repository will be made public upon acceptance. A versioned archival copy with a digital object identifier will be deposited at the time of publication.
 
 ### Reporting guidelines
 
