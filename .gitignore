@@ -59,3 +59,8 @@ Thumbs.db
 *hospital_seqs*
 *_static.csv
 *_seqs.npz
+
+# ---- Security / data archives (never commit) ----
+github-recovery-codes.txt
+*.7z
+*.zip
