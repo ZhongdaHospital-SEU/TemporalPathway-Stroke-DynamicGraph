@@ -6,7 +6,7 @@ The clinical data used in this study are from MIMIC-IV version 3.1 (https://phys
 
 ### Code availability
 
-All analysis code (cohort extraction, temporal pathway atlas, model training and evaluation, and the robustness and leakage-audit pipelines) is available at https://github.com/ZhongdaHospital-SEU/TemporalPathway-Stroke-DynamicGraph. The repository is private during peer review; access will be granted to editors and reviewers on request, and the repository will be made public upon acceptance. A versioned archival copy with a digital object identifier will be deposited at the time of publication.
+All analysis code (cohort extraction, temporal pathway atlas, model training and evaluation, and the robustness and leakage-audit pipelines) is publicly available at https://github.com/ZhongdaHospital-SEU/TemporalPathway-Stroke-DynamicGraph. The repository is publicly accessible. A versioned archival copy with a digital object identifier will be deposited at the time of publication.
 
 ### Reporting guidelines
 
@@ -16,9 +16,9 @@ The study is reported in accordance with the Transparent Reporting of a multivar
 
 This study used de-identified data. Use of MIMIC-IV and the eICU-CRD was approved through credentialed PhysioNet access, and use of these public research databases was determined to be exempt from institutional review board approval. The independent mRS cohort was collected by the authors and approved by the Ethics Committee of Zhongda Hospital, Southeast University, China; all patients provided informed consent or were included under an approved waiver of consent, in accordance with applicable regulations. The hospital cohort of 185 patients was collected retrospectively from de-identified electronic health records at a single tertiary hospital in China and was approved by the Ethics Committee of Zhongda Hospital, Southeast University, China, with a waiver of informed consent. The GEO data were originally collected with participant consent and are redistributed in de-identified form.
 
-### CRediT authorship contribution statement
+### Authors’ contributions
 
-Zhipeng Wang: Conceptualization, Methodology, Software, Formal analysis, Visualization, Writing – original draft. Luning Wang: Data curation, Investigation, Methodology, Writing – review & editing. Changsong Wang: Conceptualization, Supervision, Project administration, Funding acquisition, Writing – review & editing. Pengli Zhai: Data curation, Resources, Investigation. Hui Feng: Formal analysis, Visualization, Software. Hongmei Liu: Validation, Investigation, Resources. Qian Hou: Visualization, Software, Validation. Ming Guo: Validation, Writing – review & editing.
+Z.W. and L.W. contributed equally and are co-first authors. L.W. conceived the study, developed the methodology and software, performed the formal analysis, prepared Figures 1–6, and wrote the original draft. Z.W. curated the clinical data, contributed to the methodology, performed the investigation, and reviewed and edited the manuscript. C.W. conceived and supervised the study, administered the project, acquired funding, and reviewed and edited the manuscript. P.Z. curated the data and resources and contributed to the investigation. H.F. contributed to the formal analysis, visualization, and software. H.L. performed validation and contributed to the investigation and resources. Q.H. contributed to visualization, software, and validation. M.G. performed validation and reviewed and edited the manuscript. All authors reviewed and approved the final manuscript.
 
 ### Funding
 
